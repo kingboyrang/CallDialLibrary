@@ -1,0 +1,60 @@
+/*初始化*/
+* { margin: 0; padding: 0; }
+body { margin: 0 auto; padding: 0; }
+img { border: 0; display: block; }
+a { text-decoration: none }
+ul li { list-style-type: none; margin: 0px; padding: 0px; }
+.clr:after { content: ''; display: block; height: 0; clear: both; }
+.clr { *zoom:1;
+}
+h1, h2, h3, h4, h5, h6 { margin: 20px 0 .4em; color: #000; }
+h1 { font-size: 2em; }
+h2 {
+	padding-bottom:0.1em;
+}
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: 1em; }
+img { max-width: 100%; height: auto; width: auto\9; /* ie8 */ }
+/*开始*/
+
+.head { background: url(../images/bg1.png); height: 73px; text-align: center }
+.head img { padding-top: 4px; margin: 0 auto; width:211px;}
+.top{
+	height:40px;
+	width:100%;
+   background-color:#05be03;
+}
+.top1{
+	height:40px;
+	color:#FFF;
+	width:40px;
+	float:left;
+}
+.top1 img{width:100%;}
+.top2{
+	width:85%;
+	float:left;
+	line-height:40px;
+	font-size:16px;
+	text-align:center;
+	color:#fff;
+	font-family:"微软雅黑";
+}
+.contain{width:100%;max-width:640px;margin:0 auto;}
+.s_top{width:100%;height:auto;overflow:hidden;} 
+.s_top ul{width:96%;height:auto;overflow:hidden;margin:0 auto;} 
+.s_top ul li{width:50%;float:left;line-height:40px;font-family:"微软雅黑";font-size:14px;color:#333;}
+.ser{width:80%;line-height:40px;margin-top:2px;outline:none;border:solid 1px #ccc;font-family:"微软雅黑";color:#333;}
+
+.s_cont{width:100%;height:auto;overflow:hidden;background-color:#f8f8f8;} 
+.s_cont ul{width:100%;height:auto;overflow:hidden;margin:0 auto;} 
+.s_cont ul li{width:33%;float:left;background:url(../images/line.jpg) right center no-repeat;line-height:36px;text-indent:10px;font-family:"微软雅黑";font-size:12px;color:#333;}
+.s_cont ul li:last-child{background:none;}
+.s_cont ul:nth-child(even){background-color:#f2f2f2;}
+.s_cont ul:first-child{font-weight:bold;}
+
+.s_tit{width:98%;padding-left:2%;line-height:36px;background-color:#eee;font-family:"微软雅黑";font-size:14px;color:#333;}
+.spg{width:100%;height:auto;overflow:hidden;margin-top:10px;margin-bottom:10px;text-align:center;font-family:"微软雅黑";font-size:12px;color:#666;}
+.spg a{color:#333;display:inline-block;}

@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26DF54041B4ACF9B00F43F2C /* searchcontact_info_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF54021B4ACF9B00F43F2C /* searchcontact_info_normal@2x.png */; };
+		26DF54051B4ACF9B00F43F2C /* searchcontact_info_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF54031B4ACF9B00F43F2C /* searchcontact_info_normal@3x.png */; };
+		FF6C4B471B301DF7003B60AB /* dial_delete_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6C4B451B301DF7003B60AB /* dial_delete_nor.png */; };
+		FF6C4B481B301DF7003B60AB /* dial_delete_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6C4B461B301DF7003B60AB /* dial_delete_sel.png */; };
+		FF6C4B4B1B30229F003B60AB /* dial_num_12_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6C4B491B30229F003B60AB /* dial_num_12_normal@2x.png */; };
+		FF6C4B4C1B30229F003B60AB /* dial_num_12_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6C4B4A1B30229F003B60AB /* dial_num_12_normal@3x.png */; };
+		FF6C4B501B3022DA003B60AB /* dial_num_12_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6C4B4F1B3022DA003B60AB /* dial_num_12_normal.png */; };
+		FFBD82571B2FDB440094E8A7 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82481B2FDB440094E8A7 /* clear.png */; };
+		FFBD82581B2FDB440094E8A7 /* searchcontact_info_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82491B2FDB440094E8A7 /* searchcontact_info_normal.png */; };
+		FFBD82591B2FDB440094E8A7 /* callRecord_info_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD824A1B2FDB440094E8A7 /* callRecord_info_normal.png */; };
+		FFBD82681B2FDB500094E8A7 /* MKDialplateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD82671B2FDB500094E8A7 /* MKDialplateUtils.m */; };
+		FFBD827C1B2FDB990094E8A7 /* FontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD826C1B2FDB990094E8A7 /* FontLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFBD827D1B2FDB990094E8A7 /* FontLabelStringDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD826E1B2FDB990094E8A7 /* FontLabelStringDrawing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFBD827E1B2FDB990094E8A7 /* FontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD82701B2FDB990094E8A7 /* FontManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFBD82801B2FDB990094E8A7 /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD82751B2FDB990094E8A7 /* ZFont.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFBD82811B2FDB990094E8A7 /* MKDialplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD82771B2FDB990094E8A7 /* MKDialplateView.m */; };
+		FFBD82821B2FDB990094E8A7 /* MKDialplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD82791B2FDB990094E8A7 /* MKDialplateViewController.m */; };
+		FFBD82831B2FDB990094E8A7 /* MKSearchContactListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD827B1B2FDB990094E8A7 /* MKSearchContactListCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFBD82861B2FDCBC0094E8A7 /* ZAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD82851B2FDCBC0094E8A7 /* ZAttributedString.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFBD829B1B2FE7D10094E8A7 /* dial_num_1_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82871B2FE7D10094E8A7 /* dial_num_1_normal@2x.png */; };
+		FFBD829C1B2FE7D10094E8A7 /* dial_num_1_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82881B2FE7D10094E8A7 /* dial_num_1_normal@3x.png */; };
+		FFBD829D1B2FE7D10094E8A7 /* dial_num_2_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82891B2FE7D10094E8A7 /* dial_num_2_normal@2x.png */; };
+		FFBD829E1B2FE7D10094E8A7 /* dial_num_2_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD828A1B2FE7D10094E8A7 /* dial_num_2_normal@3x.png */; };
+		FFBD829F1B2FE7D10094E8A7 /* dial_num_3_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD828B1B2FE7D10094E8A7 /* dial_num_3_normal@2x.png */; };
+		FFBD82A01B2FE7D10094E8A7 /* dial_num_3_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD828C1B2FE7D10094E8A7 /* dial_num_3_normal@3x.png */; };
+		FFBD82A11B2FE7D10094E8A7 /* dial_num_4_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD828D1B2FE7D10094E8A7 /* dial_num_4_normal@2x.png */; };
+		FFBD82A21B2FE7D10094E8A7 /* dial_num_4_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD828E1B2FE7D10094E8A7 /* dial_num_4_normal@3x.png */; };
+		FFBD82A31B2FE7D10094E8A7 /* dial_num_5_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD828F1B2FE7D10094E8A7 /* dial_num_5_normal@2x.png */; };
+		FFBD82A41B2FE7D10094E8A7 /* dial_num_5_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82901B2FE7D10094E8A7 /* dial_num_5_normal@3x.png */; };
+		FFBD82A51B2FE7D10094E8A7 /* dial_num_6_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82911B2FE7D10094E8A7 /* dial_num_6_normal@2x.png */; };
+		FFBD82A61B2FE7D10094E8A7 /* dial_num_6_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82921B2FE7D10094E8A7 /* dial_num_6_normal@3x.png */; };
+		FFBD82A71B2FE7D10094E8A7 /* dial_num_7_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82931B2FE7D10094E8A7 /* dial_num_7_normal@2x.png */; };
+		FFBD82A81B2FE7D10094E8A7 /* dial_num_7_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82941B2FE7D10094E8A7 /* dial_num_7_normal@3x.png */; };
+		FFBD82A91B2FE7D10094E8A7 /* dial_num_8_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82951B2FE7D10094E8A7 /* dial_num_8_normal@2x.png */; };
+		FFBD82AA1B2FE7D10094E8A7 /* dial_num_8_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82961B2FE7D10094E8A7 /* dial_num_8_normal@3x.png */; };
+		FFBD82AB1B2FE7D10094E8A7 /* dial_num_9_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82971B2FE7D10094E8A7 /* dial_num_9_normal@2x.png */; };
+		FFBD82AC1B2FE7D10094E8A7 /* dial_num_9_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82981B2FE7D10094E8A7 /* dial_num_9_normal@3x.png */; };
+		FFBD82AD1B2FE7D10094E8A7 /* dial_num_11_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD82991B2FE7D10094E8A7 /* dial_num_11_normal@2x.png */; };
+		FFBD82AE1B2FE7D10094E8A7 /* dial_num_11_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD829A1B2FE7D10094E8A7 /* dial_num_11_normal@3x.png */; };
+		FFBD82B01B2FE8420094E8A7 /* libMKContact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD82AF1B2FE8420094E8A7 /* libMKContact.a */; };
+		FFBD82B21B2FE8990094E8A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD82B11B2FE8990094E8A7 /* AudioToolbox.framework */; };
+		FFBD82B41B2FE9330094E8A7 /* libMKCallRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD82B31B2FE9330094E8A7 /* libMKCallRecord.a */; };
+		FFBD82B61B2FE9C10094E8A7 /* FontLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD826B1B2FDB990094E8A7 /* FontLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBD82B71B2FE9D20094E8A7 /* ZAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD82841B2FDCBC0094E8A7 /* ZAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBD82B81B2FE9D20094E8A7 /* MKDialplateView.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD82761B2FDB990094E8A7 /* MKDialplateView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBD82B91B2FE9DE0094E8A7 /* MKDialplateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD82781B2FDB990094E8A7 /* MKDialplateViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBD82BA1B2FE9F70094E8A7 /* FontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD826F1B2FDB990094E8A7 /* FontManager.h */; };
+		FFBD82BB1B2FE9F70094E8A7 /* MKDialplateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD82661B2FDB500094E8A7 /* MKDialplateUtils.h */; };
+		FFBD82BC1B2FEA0F0094E8A7 /* FontLabelStringDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD826D1B2FDB990094E8A7 /* FontLabelStringDrawing.h */; };
+		FFBD82BD1B2FEA0F0094E8A7 /* ZAttributedStringPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD82731B2FDB990094E8A7 /* ZAttributedStringPrivate.h */; };
+		FFBD82BE1B2FEA0F0094E8A7 /* ZFont.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD82741B2FDB990094E8A7 /* ZFont.h */; };
+		FFBD82BF1B2FEA0F0094E8A7 /* MKSearchContactListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD827A1B2FDB990094E8A7 /* MKSearchContactListCell.h */; };
+		FFBD83501B3002F60094E8A7 /* dial_num_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83471B3002F60094E8A7 /* dial_num_1_normal.png */; };
+		FFBD83511B3002F60094E8A7 /* dial_num_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83481B3002F60094E8A7 /* dial_num_2_normal.png */; };
+		FFBD83521B3002F60094E8A7 /* dial_num_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83491B3002F60094E8A7 /* dial_num_3_normal.png */; };
+		FFBD83531B3002F60094E8A7 /* dial_num_4_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD834A1B3002F60094E8A7 /* dial_num_4_normal.png */; };
+		FFBD83541B3002F60094E8A7 /* dial_num_5_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD834B1B3002F60094E8A7 /* dial_num_5_normal.png */; };
+		FFBD83551B3002F60094E8A7 /* dial_num_6_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD834C1B3002F60094E8A7 /* dial_num_6_normal.png */; };
+		FFBD83561B3002F60094E8A7 /* dial_num_7_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD834D1B3002F60094E8A7 /* dial_num_7_normal.png */; };
+		FFBD83571B3002F60094E8A7 /* dial_num_8_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD834E1B3002F60094E8A7 /* dial_num_8_normal.png */; };
+		FFBD83581B3002F60094E8A7 /* dial_num_9_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD834F1B3002F60094E8A7 /* dial_num_9_normal.png */; };
+		FFBD835D1B300C9D0094E8A7 /* dial_call_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD835B1B300C9D0094E8A7 /* dial_call_sel@2x.png */; };
+		FFBD835E1B300C9D0094E8A7 /* dial_call_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD835C1B300C9D0094E8A7 /* dial_call_sel@3x.png */; };
+		FFBD83641B3015130094E8A7 /* dial_call_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83631B3015130094E8A7 /* dial_call_sel.png */; };
+		FFBD83681B3015E00094E8A7 /* dial_num_11_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83671B3015E00094E8A7 /* dial_num_11_normal.png */; };
+		FFBD836B1B3018530094E8A7 /* dial_num_10_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83691B3018530094E8A7 /* dial_num_10_normal@2x.png */; };
+		FFBD836C1B3018530094E8A7 /* dial_num_10_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD836A1B3018530094E8A7 /* dial_num_10_normal@3x.png */; };
+		FFBD83701B30189C0094E8A7 /* dial_num_10_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD836F1B30189C0094E8A7 /* dial_num_10_normal.png */; };
+		FFBD83751B301A1E0094E8A7 /* call_btn_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83711B301A1E0094E8A7 /* call_btn_nor@2x.png */; };
+		FFBD83761B301A1E0094E8A7 /* call_btn_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83721B301A1E0094E8A7 /* call_btn_nor@3x.png */; };
+		FFBD83771B301A1E0094E8A7 /* call_btn_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83731B301A1E0094E8A7 /* call_btn_sel@2x.png */; };
+		FFBD83781B301A1E0094E8A7 /* call_btn_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83741B301A1E0094E8A7 /* call_btn_sel@3x.png */; };
+		FFBD837F1B301ACB0094E8A7 /* call_btn_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD837D1B301ACB0094E8A7 /* call_btn_nor.png */; };
+		FFBD83801B301ACB0094E8A7 /* call_btn_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD837E1B301ACB0094E8A7 /* call_btn_sel.png */; };
+		FFBD83871B301C500094E8A7 /* dial_delete_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83831B301C500094E8A7 /* dial_delete_nor@2x.png */; };
+		FFBD83881B301C500094E8A7 /* dial_delete_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83841B301C500094E8A7 /* dial_delete_nor@3x.png */; };
+		FFBD83891B301C500094E8A7 /* dial_delete_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83851B301C500094E8A7 /* dial_delete_sel@2x.png */; };
+		FFBD838A1B301C500094E8A7 /* dial_delete_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBD83861B301C500094E8A7 /* dial_delete_sel@3x.png */; };
+		FFEAFF5D1B31019A00257F59 /* MKDialplateBottomView.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEAFF5B1B31019A00257F59 /* MKDialplateBottomView.h */; };
+		FFEAFF5E1B31019A00257F59 /* MKDialplateBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEAFF5C1B31019A00257F59 /* MKDialplateBottomView.m */; };
+		FFEAFFC41B312AFA00257F59 /* dial_keypad_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFEAFFC21B312AFA00257F59 /* dial_keypad_down@2x.png */; };
+		FFEAFFC51B312AFA00257F59 /* dial_keypad_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFEAFFC31B312AFA00257F59 /* dial_keypad_down@3x.png */; };
+		FFEAFFC91B312B5900257F59 /* dial_keypad_down.png in Resources */ = {isa = PBXBuildFile; fileRef = FFEAFFC81B312B5900257F59 /* dial_keypad_down.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFBD82211B2FDB060094E8A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26DF54021B4ACF9B00F43F2C /* searchcontact_info_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchcontact_info_normal@2x.png"; sourceTree = "<group>"; };
+		26DF54031B4ACF9B00F43F2C /* searchcontact_info_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchcontact_info_normal@3x.png"; sourceTree = "<group>"; };
+		FF6C4B451B301DF7003B60AB /* dial_delete_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_delete_nor.png; sourceTree = "<group>"; };
+		FF6C4B461B301DF7003B60AB /* dial_delete_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_delete_sel.png; sourceTree = "<group>"; };
+		FF6C4B491B30229F003B60AB /* dial_num_12_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_12_normal@2x.png"; sourceTree = "<group>"; };
+		FF6C4B4A1B30229F003B60AB /* dial_num_12_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_12_normal@3x.png"; sourceTree = "<group>"; };
+		FF6C4B4F1B3022DA003B60AB /* dial_num_12_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_12_normal.png; sourceTree = "<group>"; };
+		FFBD82231B2FDB060094E8A7 /* libMKDialplateView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMKDialplateView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBD82411B2FDB2A0094E8A7 /* MKDialplateSource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKDialplateSource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBD82441B2FDB2A0094E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBD82481B2FDB440094E8A7 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		FFBD82491B2FDB440094E8A7 /* searchcontact_info_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchcontact_info_normal.png; sourceTree = "<group>"; };
+		FFBD824A1B2FDB440094E8A7 /* callRecord_info_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callRecord_info_normal.png; sourceTree = "<group>"; };
+		FFBD82661B2FDB500094E8A7 /* MKDialplateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDialplateUtils.h; sourceTree = "<group>"; };
+		FFBD82671B2FDB500094E8A7 /* MKDialplateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDialplateUtils.m; sourceTree = "<group>"; };
+		FFBD826B1B2FDB990094E8A7 /* FontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontLabel.h; sourceTree = "<group>"; };
+		FFBD826C1B2FDB990094E8A7 /* FontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontLabel.m; sourceTree = "<group>"; };
+		FFBD826D1B2FDB990094E8A7 /* FontLabelStringDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontLabelStringDrawing.h; sourceTree = "<group>"; };
+		FFBD826E1B2FDB990094E8A7 /* FontLabelStringDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontLabelStringDrawing.m; sourceTree = "<group>"; };
+		FFBD826F1B2FDB990094E8A7 /* FontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontManager.h; sourceTree = "<group>"; };
+		FFBD82701B2FDB990094E8A7 /* FontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontManager.m; sourceTree = "<group>"; };
+		FFBD82731B2FDB990094E8A7 /* ZAttributedStringPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedStringPrivate.h; sourceTree = "<group>"; };
+		FFBD82741B2FDB990094E8A7 /* ZFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFont.h; sourceTree = "<group>"; };
+		FFBD82751B2FDB990094E8A7 /* ZFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFont.m; sourceTree = "<group>"; };
+		FFBD82761B2FDB990094E8A7 /* MKDialplateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDialplateView.h; sourceTree = "<group>"; };
+		FFBD82771B2FDB990094E8A7 /* MKDialplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDialplateView.m; sourceTree = "<group>"; };
+		FFBD82781B2FDB990094E8A7 /* MKDialplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDialplateViewController.h; sourceTree = "<group>"; };
+		FFBD82791B2FDB990094E8A7 /* MKDialplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDialplateViewController.m; sourceTree = "<group>"; };
+		FFBD827A1B2FDB990094E8A7 /* MKSearchContactListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSearchContactListCell.h; sourceTree = "<group>"; };
+		FFBD827B1B2FDB990094E8A7 /* MKSearchContactListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSearchContactListCell.m; sourceTree = "<group>"; };
+		FFBD82841B2FDCBC0094E8A7 /* ZAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedString.h; sourceTree = "<group>"; };
+		FFBD82851B2FDCBC0094E8A7 /* ZAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAttributedString.m; sourceTree = "<group>"; };
+		FFBD82871B2FE7D10094E8A7 /* dial_num_1_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_1_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD82881B2FE7D10094E8A7 /* dial_num_1_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_1_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD82891B2FE7D10094E8A7 /* dial_num_2_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_2_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD828A1B2FE7D10094E8A7 /* dial_num_2_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_2_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD828B1B2FE7D10094E8A7 /* dial_num_3_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_3_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD828C1B2FE7D10094E8A7 /* dial_num_3_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_3_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD828D1B2FE7D10094E8A7 /* dial_num_4_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_4_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD828E1B2FE7D10094E8A7 /* dial_num_4_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_4_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD828F1B2FE7D10094E8A7 /* dial_num_5_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_5_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD82901B2FE7D10094E8A7 /* dial_num_5_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_5_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD82911B2FE7D10094E8A7 /* dial_num_6_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_6_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD82921B2FE7D10094E8A7 /* dial_num_6_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_6_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD82931B2FE7D10094E8A7 /* dial_num_7_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_7_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD82941B2FE7D10094E8A7 /* dial_num_7_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_7_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD82951B2FE7D10094E8A7 /* dial_num_8_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_8_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD82961B2FE7D10094E8A7 /* dial_num_8_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_8_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD82971B2FE7D10094E8A7 /* dial_num_9_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_9_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD82981B2FE7D10094E8A7 /* dial_num_9_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_9_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD82991B2FE7D10094E8A7 /* dial_num_11_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_11_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD829A1B2FE7D10094E8A7 /* dial_num_11_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_11_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD82AF1B2FE8420094E8A7 /* libMKContact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMKContact.a; path = ../Libs/libMKContact.a; sourceTree = "<group>"; };
+		FFBD82B11B2FE8990094E8A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FFBD82B31B2FE9330094E8A7 /* libMKCallRecord.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMKCallRecord.a; path = ../Libs/libMKCallRecord.a; sourceTree = "<group>"; };
+		FFBD83471B3002F60094E8A7 /* dial_num_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_1_normal.png; sourceTree = "<group>"; };
+		FFBD83481B3002F60094E8A7 /* dial_num_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_2_normal.png; sourceTree = "<group>"; };
+		FFBD83491B3002F60094E8A7 /* dial_num_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_3_normal.png; sourceTree = "<group>"; };
+		FFBD834A1B3002F60094E8A7 /* dial_num_4_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_4_normal.png; sourceTree = "<group>"; };
+		FFBD834B1B3002F60094E8A7 /* dial_num_5_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_5_normal.png; sourceTree = "<group>"; };
+		FFBD834C1B3002F60094E8A7 /* dial_num_6_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_6_normal.png; sourceTree = "<group>"; };
+		FFBD834D1B3002F60094E8A7 /* dial_num_7_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_7_normal.png; sourceTree = "<group>"; };
+		FFBD834E1B3002F60094E8A7 /* dial_num_8_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_8_normal.png; sourceTree = "<group>"; };
+		FFBD834F1B3002F60094E8A7 /* dial_num_9_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_9_normal.png; sourceTree = "<group>"; };
+		FFBD835B1B300C9D0094E8A7 /* dial_call_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_call_sel@2x.png"; sourceTree = "<group>"; };
+		FFBD835C1B300C9D0094E8A7 /* dial_call_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_call_sel@3x.png"; sourceTree = "<group>"; };
+		FFBD83631B3015130094E8A7 /* dial_call_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_call_sel.png; sourceTree = "<group>"; };
+		FFBD83671B3015E00094E8A7 /* dial_num_11_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_11_normal.png; sourceTree = "<group>"; };
+		FFBD83691B3018530094E8A7 /* dial_num_10_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_10_normal@2x.png"; sourceTree = "<group>"; };
+		FFBD836A1B3018530094E8A7 /* dial_num_10_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_num_10_normal@3x.png"; sourceTree = "<group>"; };
+		FFBD836F1B30189C0094E8A7 /* dial_num_10_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_num_10_normal.png; sourceTree = "<group>"; };
+		FFBD83711B301A1E0094E8A7 /* call_btn_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_btn_nor@2x.png"; sourceTree = "<group>"; };
+		FFBD83721B301A1E0094E8A7 /* call_btn_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_btn_nor@3x.png"; sourceTree = "<group>"; };
+		FFBD83731B301A1E0094E8A7 /* call_btn_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_btn_sel@2x.png"; sourceTree = "<group>"; };
+		FFBD83741B301A1E0094E8A7 /* call_btn_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_btn_sel@3x.png"; sourceTree = "<group>"; };
+		FFBD837D1B301ACB0094E8A7 /* call_btn_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call_btn_nor.png; sourceTree = "<group>"; };
+		FFBD837E1B301ACB0094E8A7 /* call_btn_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call_btn_sel.png; sourceTree = "<group>"; };
+		FFBD83831B301C500094E8A7 /* dial_delete_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_delete_nor@2x.png"; sourceTree = "<group>"; };
+		FFBD83841B301C500094E8A7 /* dial_delete_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_delete_nor@3x.png"; sourceTree = "<group>"; };
+		FFBD83851B301C500094E8A7 /* dial_delete_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_delete_sel@2x.png"; sourceTree = "<group>"; };
+		FFBD83861B301C500094E8A7 /* dial_delete_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_delete_sel@3x.png"; sourceTree = "<group>"; };
+		FFEAFF5B1B31019A00257F59 /* MKDialplateBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDialplateBottomView.h; sourceTree = "<group>"; };
+		FFEAFF5C1B31019A00257F59 /* MKDialplateBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDialplateBottomView.m; sourceTree = "<group>"; };
+		FFEAFFC21B312AFA00257F59 /* dial_keypad_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_keypad_down@2x.png"; sourceTree = "<group>"; };
+		FFEAFFC31B312AFA00257F59 /* dial_keypad_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_keypad_down@3x.png"; sourceTree = "<group>"; };
+		FFEAFFC81B312B5900257F59 /* dial_keypad_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_keypad_down.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFBD82201B2FDB060094E8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBD82B41B2FE9330094E8A7 /* libMKCallRecord.a in Frameworks */,
+				FFBD82B21B2FE8990094E8A7 /* AudioToolbox.framework in Frameworks */,
+				FFBD82B01B2FE8420094E8A7 /* libMKContact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBD823E1B2FDB2A0094E8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFBD821A1B2FDB060094E8A7 = {
+			isa = PBXGroup;
+			children = (
+				FFBD82B31B2FE9330094E8A7 /* libMKCallRecord.a */,
+				FFBD82B11B2FE8990094E8A7 /* AudioToolbox.framework */,
+				FFBD82AF1B2FE8420094E8A7 /* libMKContact.a */,
+				FFBD82251B2FDB060094E8A7 /* MKDialplateView */,
+				FFBD82421B2FDB2A0094E8A7 /* MKDialplateSource */,
+				FFBD82241B2FDB060094E8A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFBD82241B2FDB060094E8A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD82231B2FDB060094E8A7 /* libMKDialplateView.a */,
+				FFBD82411B2FDB2A0094E8A7 /* MKDialplateSource.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFBD82251B2FDB060094E8A7 /* MKDialplateView */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD82691B2FDB990094E8A7 /* MKDialplate */,
+				FFBD82661B2FDB500094E8A7 /* MKDialplateUtils.h */,
+				FFBD82671B2FDB500094E8A7 /* MKDialplateUtils.m */,
+			);
+			path = MKDialplateView;
+			sourceTree = "<group>";
+		};
+		FFBD82421B2FDB2A0094E8A7 /* MKDialplateSource */ = {
+			isa = PBXGroup;
+			children = (
+				26DF54021B4ACF9B00F43F2C /* searchcontact_info_normal@2x.png */,
+				26DF54031B4ACF9B00F43F2C /* searchcontact_info_normal@3x.png */,
+				FFEAFFC81B312B5900257F59 /* dial_keypad_down.png */,
+				FFEAFFC21B312AFA00257F59 /* dial_keypad_down@2x.png */,
+				FFEAFFC31B312AFA00257F59 /* dial_keypad_down@3x.png */,
+				FF6C4B4F1B3022DA003B60AB /* dial_num_12_normal.png */,
+				FF6C4B491B30229F003B60AB /* dial_num_12_normal@2x.png */,
+				FF6C4B4A1B30229F003B60AB /* dial_num_12_normal@3x.png */,
+				FF6C4B451B301DF7003B60AB /* dial_delete_nor.png */,
+				FF6C4B461B301DF7003B60AB /* dial_delete_sel.png */,
+				FFBD83831B301C500094E8A7 /* dial_delete_nor@2x.png */,
+				FFBD83841B301C500094E8A7 /* dial_delete_nor@3x.png */,
+				FFBD83851B301C500094E8A7 /* dial_delete_sel@2x.png */,
+				FFBD83861B301C500094E8A7 /* dial_delete_sel@3x.png */,
+				FFBD837D1B301ACB0094E8A7 /* call_btn_nor.png */,
+				FFBD837E1B301ACB0094E8A7 /* call_btn_sel.png */,
+				FFBD83711B301A1E0094E8A7 /* call_btn_nor@2x.png */,
+				FFBD83721B301A1E0094E8A7 /* call_btn_nor@3x.png */,
+				FFBD83731B301A1E0094E8A7 /* call_btn_sel@2x.png */,
+				FFBD83741B301A1E0094E8A7 /* call_btn_sel@3x.png */,
+				FFBD836F1B30189C0094E8A7 /* dial_num_10_normal.png */,
+				FFBD83691B3018530094E8A7 /* dial_num_10_normal@2x.png */,
+				FFBD836A1B3018530094E8A7 /* dial_num_10_normal@3x.png */,
+				FFBD83671B3015E00094E8A7 /* dial_num_11_normal.png */,
+				FFBD83631B3015130094E8A7 /* dial_call_sel.png */,
+				FFBD835B1B300C9D0094E8A7 /* dial_call_sel@2x.png */,
+				FFBD835C1B300C9D0094E8A7 /* dial_call_sel@3x.png */,
+				FFBD83471B3002F60094E8A7 /* dial_num_1_normal.png */,
+				FFBD83481B3002F60094E8A7 /* dial_num_2_normal.png */,
+				FFBD83491B3002F60094E8A7 /* dial_num_3_normal.png */,
+				FFBD834A1B3002F60094E8A7 /* dial_num_4_normal.png */,
+				FFBD834B1B3002F60094E8A7 /* dial_num_5_normal.png */,
+				FFBD834C1B3002F60094E8A7 /* dial_num_6_normal.png */,
+				FFBD834D1B3002F60094E8A7 /* dial_num_7_normal.png */,
+				FFBD834E1B3002F60094E8A7 /* dial_num_8_normal.png */,
+				FFBD834F1B3002F60094E8A7 /* dial_num_9_normal.png */,
+				FFBD82871B2FE7D10094E8A7 /* dial_num_1_normal@2x.png */,
+				FFBD82881B2FE7D10094E8A7 /* dial_num_1_normal@3x.png */,
+				FFBD82891B2FE7D10094E8A7 /* dial_num_2_normal@2x.png */,
+				FFBD828A1B2FE7D10094E8A7 /* dial_num_2_normal@3x.png */,
+				FFBD828B1B2FE7D10094E8A7 /* dial_num_3_normal@2x.png */,
+				FFBD828C1B2FE7D10094E8A7 /* dial_num_3_normal@3x.png */,
+				FFBD828D1B2FE7D10094E8A7 /* dial_num_4_normal@2x.png */,
+				FFBD828E1B2FE7D10094E8A7 /* dial_num_4_normal@3x.png */,
+				FFBD828F1B2FE7D10094E8A7 /* dial_num_5_normal@2x.png */,
+				FFBD82901B2FE7D10094E8A7 /* dial_num_5_normal@3x.png */,
+				FFBD82911B2FE7D10094E8A7 /* dial_num_6_normal@2x.png */,
+				FFBD82921B2FE7D10094E8A7 /* dial_num_6_normal@3x.png */,
+				FFBD82931B2FE7D10094E8A7 /* dial_num_7_normal@2x.png */,
+				FFBD82941B2FE7D10094E8A7 /* dial_num_7_normal@3x.png */,
+				FFBD82951B2FE7D10094E8A7 /* dial_num_8_normal@2x.png */,
+				FFBD82961B2FE7D10094E8A7 /* dial_num_8_normal@3x.png */,
+				FFBD82971B2FE7D10094E8A7 /* dial_num_9_normal@2x.png */,
+				FFBD82981B2FE7D10094E8A7 /* dial_num_9_normal@3x.png */,
+				FFBD82991B2FE7D10094E8A7 /* dial_num_11_normal@2x.png */,
+				FFBD829A1B2FE7D10094E8A7 /* dial_num_11_normal@3x.png */,
+				FFBD82481B2FDB440094E8A7 /* clear.png */,
+				FFBD82491B2FDB440094E8A7 /* searchcontact_info_normal.png */,
+				FFBD824A1B2FDB440094E8A7 /* callRecord_info_normal.png */,
+				FFBD82431B2FDB2A0094E8A7 /* Supporting Files */,
+			);
+			path = MKDialplateSource;
+			sourceTree = "<group>";
+		};
+		FFBD82431B2FDB2A0094E8A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD82441B2FDB2A0094E8A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFBD82691B2FDB990094E8A7 /* MKDialplate */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD826A1B2FDB990094E8A7 /* FontLabel */,
+				FFBD82761B2FDB990094E8A7 /* MKDialplateView.h */,
+				FFBD82771B2FDB990094E8A7 /* MKDialplateView.m */,
+				FFBD82781B2FDB990094E8A7 /* MKDialplateViewController.h */,
+				FFBD82791B2FDB990094E8A7 /* MKDialplateViewController.m */,
+				FFBD827A1B2FDB990094E8A7 /* MKSearchContactListCell.h */,
+				FFBD827B1B2FDB990094E8A7 /* MKSearchContactListCell.m */,
+				FFEAFF5B1B31019A00257F59 /* MKDialplateBottomView.h */,
+				FFEAFF5C1B31019A00257F59 /* MKDialplateBottomView.m */,
+			);
+			path = MKDialplate;
+			sourceTree = "<group>";
+		};
+		FFBD826A1B2FDB990094E8A7 /* FontLabel */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD82841B2FDCBC0094E8A7 /* ZAttributedString.h */,
+				FFBD82851B2FDCBC0094E8A7 /* ZAttributedString.m */,
+				FFBD826B1B2FDB990094E8A7 /* FontLabel.h */,
+				FFBD826C1B2FDB990094E8A7 /* FontLabel.m */,
+				FFBD826D1B2FDB990094E8A7 /* FontLabelStringDrawing.h */,
+				FFBD826E1B2FDB990094E8A7 /* FontLabelStringDrawing.m */,
+				FFBD826F1B2FDB990094E8A7 /* FontManager.h */,
+				FFBD82701B2FDB990094E8A7 /* FontManager.m */,
+				FFBD82731B2FDB990094E8A7 /* ZAttributedStringPrivate.h */,
+				FFBD82741B2FDB990094E8A7 /* ZFont.h */,
+				FFBD82751B2FDB990094E8A7 /* ZFont.m */,
+			);
+			path = FontLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FFBD82B51B2FE9960094E8A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBD82B61B2FE9C10094E8A7 /* FontLabel.h in Headers */,
+				FFBD82B71B2FE9D20094E8A7 /* ZAttributedString.h in Headers */,
+				FFBD82B81B2FE9D20094E8A7 /* MKDialplateView.h in Headers */,
+				FFBD82B91B2FE9DE0094E8A7 /* MKDialplateViewController.h in Headers */,
+				FFBD82BC1B2FEA0F0094E8A7 /* FontLabelStringDrawing.h in Headers */,
+				FFBD82BD1B2FEA0F0094E8A7 /* ZAttributedStringPrivate.h in Headers */,
+				FFBD82BE1B2FEA0F0094E8A7 /* ZFont.h in Headers */,
+				FFBD82BF1B2FEA0F0094E8A7 /* MKSearchContactListCell.h in Headers */,
+				FFBD82BA1B2FE9F70094E8A7 /* FontManager.h in Headers */,
+				FFEAFF5D1B31019A00257F59 /* MKDialplateBottomView.h in Headers */,
+				FFBD82BB1B2FE9F70094E8A7 /* MKDialplateUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FFBD82221B2FDB060094E8A7 /* MKDialplateView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFBD82371B2FDB060094E8A7 /* Build configuration list for PBXNativeTarget "MKDialplateView" */;
+			buildPhases = (
+				FFBD821F1B2FDB060094E8A7 /* Sources */,
+				FFBD82201B2FDB060094E8A7 /* Frameworks */,
+				FFBD82211B2FDB060094E8A7 /* CopyFiles */,
+				FFBD82B51B2FE9960094E8A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKDialplateView;
+			productName = MKDialplateView;
+			productReference = FFBD82231B2FDB060094E8A7 /* libMKDialplateView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FFBD82401B2FDB2A0094E8A7 /* MKDialplateSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFBD82451B2FDB2A0094E8A7 /* Build configuration list for PBXNativeTarget "MKDialplateSource" */;
+			buildPhases = (
+				FFBD823D1B2FDB2A0094E8A7 /* Sources */,
+				FFBD823E1B2FDB2A0094E8A7 /* Frameworks */,
+				FFBD823F1B2FDB2A0094E8A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKDialplateSource;
+			productName = MKDialplateSource;
+			productReference = FFBD82411B2FDB2A0094E8A7 /* MKDialplateSource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFBD821B1B2FDB060094E8A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = wulanzhou;
+				TargetAttributes = {
+					FFBD82221B2FDB060094E8A7 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FFBD82401B2FDB2A0094E8A7 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = FFBD821E1B2FDB060094E8A7 /* Build configuration list for PBXProject "MKDialplateView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFBD821A1B2FDB060094E8A7;
+			productRefGroup = FFBD82241B2FDB060094E8A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFBD82221B2FDB060094E8A7 /* MKDialplateView */,
+				FFBD82401B2FDB2A0094E8A7 /* MKDialplateSource */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFBD823F1B2FDB2A0094E8A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBD82A71B2FE7D10094E8A7 /* dial_num_7_normal@2x.png in Resources */,
+				FFBD82A21B2FE7D10094E8A7 /* dial_num_4_normal@3x.png in Resources */,
+				FFBD83701B30189C0094E8A7 /* dial_num_10_normal.png in Resources */,
+				FFBD83581B3002F60094E8A7 /* dial_num_9_normal.png in Resources */,
+				FFBD835D1B300C9D0094E8A7 /* dial_call_sel@2x.png in Resources */,
+				FFBD83521B3002F60094E8A7 /* dial_num_3_normal.png in Resources */,
+				FFBD83751B301A1E0094E8A7 /* call_btn_nor@2x.png in Resources */,
+				FFBD829F1B2FE7D10094E8A7 /* dial_num_3_normal@2x.png in Resources */,
+				FFBD829E1B2FE7D10094E8A7 /* dial_num_2_normal@3x.png in Resources */,
+				FFBD829B1B2FE7D10094E8A7 /* dial_num_1_normal@2x.png in Resources */,
+				FFBD836C1B3018530094E8A7 /* dial_num_10_normal@3x.png in Resources */,
+				FFBD838A1B301C500094E8A7 /* dial_delete_sel@3x.png in Resources */,
+				FF6C4B4C1B30229F003B60AB /* dial_num_12_normal@3x.png in Resources */,
+				FFBD83771B301A1E0094E8A7 /* call_btn_sel@2x.png in Resources */,
+				FF6C4B501B3022DA003B60AB /* dial_num_12_normal.png in Resources */,
+				FFBD836B1B3018530094E8A7 /* dial_num_10_normal@2x.png in Resources */,
+				FFBD835E1B300C9D0094E8A7 /* dial_call_sel@3x.png in Resources */,
+				FFBD83761B301A1E0094E8A7 /* call_btn_nor@3x.png in Resources */,
+				FF6C4B481B301DF7003B60AB /* dial_delete_sel.png in Resources */,
+				FFBD82A01B2FE7D10094E8A7 /* dial_num_3_normal@3x.png in Resources */,
+				FFBD82AA1B2FE7D10094E8A7 /* dial_num_8_normal@3x.png in Resources */,
+				FFBD83871B301C500094E8A7 /* dial_delete_nor@2x.png in Resources */,
+				26DF54041B4ACF9B00F43F2C /* searchcontact_info_normal@2x.png in Resources */,
+				FFEAFFC41B312AFA00257F59 /* dial_keypad_down@2x.png in Resources */,
+				FFBD82571B2FDB440094E8A7 /* clear.png in Resources */,
+				FFBD83781B301A1E0094E8A7 /* call_btn_sel@3x.png in Resources */,
+				FFBD82AC1B2FE7D10094E8A7 /* dial_num_9_normal@3x.png in Resources */,
+				FFBD83501B3002F60094E8A7 /* dial_num_1_normal.png in Resources */,
+				FFBD82581B2FDB440094E8A7 /* searchcontact_info_normal.png in Resources */,
+				FFBD83891B301C500094E8A7 /* dial_delete_sel@2x.png in Resources */,
+				FFBD82AE1B2FE7D10094E8A7 /* dial_num_11_normal@3x.png in Resources */,
+				FFBD83561B3002F60094E8A7 /* dial_num_7_normal.png in Resources */,
+				FFBD83881B301C500094E8A7 /* dial_delete_nor@3x.png in Resources */,
+				FFBD83681B3015E00094E8A7 /* dial_num_11_normal.png in Resources */,
+				FFBD82591B2FDB440094E8A7 /* callRecord_info_normal.png in Resources */,
+				FFBD83571B3002F60094E8A7 /* dial_num_8_normal.png in Resources */,
+				FFBD82A81B2FE7D10094E8A7 /* dial_num_7_normal@3x.png in Resources */,
+				FFEAFFC91B312B5900257F59 /* dial_keypad_down.png in Resources */,
+				FF6C4B4B1B30229F003B60AB /* dial_num_12_normal@2x.png in Resources */,
+				26DF54051B4ACF9B00F43F2C /* searchcontact_info_normal@3x.png in Resources */,
+				FFBD82A31B2FE7D10094E8A7 /* dial_num_5_normal@2x.png in Resources */,
+				FFBD82A51B2FE7D10094E8A7 /* dial_num_6_normal@2x.png in Resources */,
+				FFEAFFC51B312AFA00257F59 /* dial_keypad_down@3x.png in Resources */,
+				FFBD83801B301ACB0094E8A7 /* call_btn_sel.png in Resources */,
+				FFBD83511B3002F60094E8A7 /* dial_num_2_normal.png in Resources */,
+				FFBD82AD1B2FE7D10094E8A7 /* dial_num_11_normal@2x.png in Resources */,
+				FFBD83551B3002F60094E8A7 /* dial_num_6_normal.png in Resources */,
+				FFBD83541B3002F60094E8A7 /* dial_num_5_normal.png in Resources */,
+				FFBD82A61B2FE7D10094E8A7 /* dial_num_6_normal@3x.png in Resources */,
+				FFBD83531B3002F60094E8A7 /* dial_num_4_normal.png in Resources */,
+				FFBD82A41B2FE7D10094E8A7 /* dial_num_5_normal@3x.png in Resources */,
+				FFBD82A11B2FE7D10094E8A7 /* dial_num_4_normal@2x.png in Resources */,
+				FFBD83641B3015130094E8A7 /* dial_call_sel.png in Resources */,
+				FFBD837F1B301ACB0094E8A7 /* call_btn_nor.png in Resources */,
+				FFBD82AB1B2FE7D10094E8A7 /* dial_num_9_normal@2x.png in Resources */,
+				FF6C4B471B301DF7003B60AB /* dial_delete_nor.png in Resources */,
+				FFBD82A91B2FE7D10094E8A7 /* dial_num_8_normal@2x.png in Resources */,
+				FFBD829C1B2FE7D10094E8A7 /* dial_num_1_normal@3x.png in Resources */,
+				FFBD829D1B2FE7D10094E8A7 /* dial_num_2_normal@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFBD821F1B2FDB060094E8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBD82681B2FDB500094E8A7 /* MKDialplateUtils.m in Sources */,
+				FFBD827E1B2FDB990094E8A7 /* FontManager.m in Sources */,
+				FFBD827D1B2FDB990094E8A7 /* FontLabelStringDrawing.m in Sources */,
+				FFBD82861B2FDCBC0094E8A7 /* ZAttributedString.m in Sources */,
+				FFEAFF5E1B31019A00257F59 /* MKDialplateBottomView.m in Sources */,
+				FFBD827C1B2FDB990094E8A7 /* FontLabel.m in Sources */,
+				FFBD82801B2FDB990094E8A7 /* ZFont.m in Sources */,
+				FFBD82811B2FDB990094E8A7 /* MKDialplateView.m in Sources */,
+				FFBD82831B2FDB990094E8A7 /* MKSearchContactListCell.m in Sources */,
+				FFBD82821B2FDB990094E8A7 /* MKDialplateViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFBD823D1B2FDB2A0094E8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FFBD82351B2FDB060094E8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../Libs/MKContact/;
+			};
+			name = Debug;
+		};
+		FFBD82361B2FDB060094E8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../Libs/MKContact/;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFBD82381B2FDB060094E8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wulanzhou/Desktop/Project/Cool170Library/Libs,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../Libs/MKContact/ ../Libs/MKCallRecord/";
+			};
+			name = Debug;
+		};
+		FFBD82391B2FDB060094E8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wulanzhou/Desktop/Project/Cool170Library/Libs,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "../Libs/MKContact/ ../Libs/MKCallRecord/";
+			};
+			name = Release;
+		};
+		FFBD82461B2FDB2A0094E8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MKDialplateSource/Info.plist;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FFBD82471B2FDB2A0094E8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				INFOPLIST_FILE = MKDialplateSource/Info.plist;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFBD821E1B2FDB060094E8A7 /* Build configuration list for PBXProject "MKDialplateView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBD82351B2FDB060094E8A7 /* Debug */,
+				FFBD82361B2FDB060094E8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFBD82371B2FDB060094E8A7 /* Build configuration list for PBXNativeTarget "MKDialplateView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBD82381B2FDB060094E8A7 /* Debug */,
+				FFBD82391B2FDB060094E8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFBD82451B2FDB2A0094E8A7 /* Build configuration list for PBXNativeTarget "MKDialplateSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBD82461B2FDB2A0094E8A7 /* Debug */,
+				FFBD82471B2FDB2A0094E8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFBD821B1B2FDB060094E8A7 /* Project object */;
+}

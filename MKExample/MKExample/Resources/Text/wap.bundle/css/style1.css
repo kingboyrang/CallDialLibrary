@@ -1,0 +1,102 @@
+#getId{overflow:hidden;width:96%;margin-left:auto;margin-right:auto;padding-top:8%;}
+.tabT{
+	width:26%;
+	float:right;
+	padding:0;
+	margin:0px;
+}
+.tab,.tab li{padding:0;margin:0;border:none}
+.tab{display:block; margin-bottom:10%;}
+.tab li{
+	display:block;
+	line-height:20px;
+	text-align:center;
+	cursor:pointer;
+	font-size:14px;
+	color:#652B1E;
+	padding:10% 2%;
+	background:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#F5EEDF));
+	font-family:"微软雅黑";
+}
+.tab li.current{display:block;color:#000;background:-webkit-gradient(linear,0 0,0 100%,from(#E27A00),to(#FfF));}
+.show,hidden{float:left;width:72%;margin-top:0px;text-align:left;border-right:none;}
+.hidden{display:none;}
+.show{display:block;background:#f6f6f6;}
+.con{
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 2%;
+	width: 98%;
+}
+.show .con ul li,.hidden .con ul li{
+	width:47%;
+	float:left;
+	margin-left:2%;
+	margin-bottom:5%;
+	text-align:center;
+	border-radius:4px;
+	background-color: #FFF;
+}
+.show .con ul li img,.hidden .con ul li img{
+		width:90%;
+		background:#fff;
+		margin-top:5%;
+		margin-left:5%;
+		border-radius:4px;
+}
+.show .con ul li i,.hidden .con ul li i{
+	font-size:14px;
+	font-family:"微软雅黑";
+	font-style:normal;
+	color:#000;
+	line-height:30px;
+}
+.show .con ul li:hover,.hidden .con ul li:hover{
+	background:#F08200;
+}
+
+.simple{width:92%;margin:10px auto;line-height:24px;font-size:12px;color:#666;font-family:"微软雅黑";}
+.simple span{font-weight:bold;}
+ul,h5{margin:0;padding:0;list-style:none;}
+#levelmenu{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#levelmenu div.unit ul{width:92%;margin:10px auto;border-top:none;}
+#levelmenu h5{
+	width:92%;
+	line-height:30px;
+	color:#000;
+	font-weight:normal;
+	background-color:#f7f7f7;
+	margin:0;
+	font-size:16px;
+	cursor:default;
+	font-family:"微软雅黑";
+	padding-top: 1%;
+	padding-right: 4%;
+	padding-bottom: 1%;
+	padding-left: 4%;
+	border-top:solid 1px #ccc;
+	border-bottom:solid 1px #ccc;
+}
+#levelmenu h5 span{dispaly:inline-block;float:right; margin-top:7px;color:#ccc;}
+#levelmenu div.unit ul{/*display:none;*/line-height:24px;font-size:12px;color:#666;font-family:"微软雅黑";}
+#levelmenu div.unit ul span{font-weight:bold;}
+#levelmenu div.current ul{display:block;width:92%;margin:10px auto;}
+#levelmenu div.current ul li{
+	width:45%;
+	float:left;
+	margin-top:5%;
+	margin-left:2%;
+	text-align:center;
+	border-radius:4px;
+	margin-bottom:5%;
+	background-color: #FFF;
+}
+#levelmenu div.current ul li a{color:#3B475F;text-decoration:none;}
+#levelmenu div.current ul li a img{width:90%;margin-top:5%;margin-left:4%;background:#fff;border-radius:4px;}
+#levelmenu div.current ul li i{font-family:"微软雅黑";font-size:14px;color:#000;line-height:30px;font-style:normal;}
+#levelmenu div.current ul li:hover{background:#F08200;}

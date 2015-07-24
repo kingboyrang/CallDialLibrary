@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFD044621B2EC36400D93F4B /* callRecord_add_contact_down.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD044551B2EC36400D93F4B /* callRecord_add_contact_down.png */; };
+		FFD044631B2EC36400D93F4B /* callRecord_add_contact_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD044561B2EC36400D93F4B /* callRecord_add_contact_normal.png */; };
+		FFD044641B2EC36400D93F4B /* callRecord_call_waiting.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD044571B2EC36400D93F4B /* callRecord_call_waiting.png */; };
+		FFD044651B2EC36400D93F4B /* callRecord_callType.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD044581B2EC36400D93F4B /* callRecord_callType.png */; };
+		FFD044661B2EC36400D93F4B /* callRecord_detail_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD044591B2EC36400D93F4B /* callRecord_detail_normal.png */; };
+		FFD044671B2EC36400D93F4B /* callRecord_info_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD0445A1B2EC36400D93F4B /* callRecord_info_arrow.png */; };
+		FFD044681B2EC36400D93F4B /* callRecord_info_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD0445B1B2EC36400D93F4B /* callRecord_info_normal.png */; };
+		FFD044691B2EC36400D93F4B /* dial.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD0445C1B2EC36400D93F4B /* dial.png */; };
+		FFD0446A1B2EC36400D93F4B /* searchcontact_info_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD0445D1B2EC36400D93F4B /* searchcontact_info_normal.png */; };
+		FFD0446B1B2EC36400D93F4B /* typehuchu.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD0445E1B2EC36400D93F4B /* typehuchu.png */; };
+		FFD0446C1B2EC36400D93F4B /* typehuru.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD0445F1B2EC36400D93F4B /* typehuru.png */; };
+		FFD0446D1B2EC36400D93F4B /* weishuovip.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD044601B2EC36400D93F4B /* weishuovip.png */; };
+		FFD0446E1B2EC36400D93F4B /* weishuovipbig.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD044611B2EC36400D93F4B /* weishuovipbig.png */; };
+		FFD044751B2EC43E00D93F4B /* MKCallRecordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD044721B2EC43E00D93F4B /* MKCallRecordListCell.m */; };
+		FFD044761B2EC43E00D93F4B /* MKCallRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD044741B2EC43E00D93F4B /* MKCallRecordViewController.m */; };
+		FFD0447B1B2EC45700D93F4B /* MKCallRecordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD044781B2EC45700D93F4B /* MKCallRecordDetailViewController.m */; };
+		FFD0447C1B2EC45700D93F4B /* MKCallRecordDetailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD0447A1B2EC45700D93F4B /* MKCallRecordDetailListCell.m */; };
+		FFD0447F1B2EC45F00D93F4B /* MKCallRecordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD0447E1B2EC45F00D93F4B /* MKCallRecordUtils.m */; };
+		FFD044811B2EC53D00D93F4B /* MKCallRecordUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD0447D1B2EC45F00D93F4B /* MKCallRecordUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044821B2EC54B00D93F4B /* MKCallRecordViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD044731B2EC43E00D93F4B /* MKCallRecordViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044841B2EC5A000D93F4B /* libMKContact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD044831B2EC5A000D93F4B /* libMKContact.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFD0442E1B2EC30400D93F4B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FFD044301B2EC30400D93F4B /* libMKCallRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMKCallRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD0444E1B2EC32C00D93F4B /* MKCallRecordResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKCallRecordResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD044511B2EC32C00D93F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD044551B2EC36400D93F4B /* callRecord_add_contact_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callRecord_add_contact_down.png; sourceTree = "<group>"; };
+		FFD044561B2EC36400D93F4B /* callRecord_add_contact_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callRecord_add_contact_normal.png; sourceTree = "<group>"; };
+		FFD044571B2EC36400D93F4B /* callRecord_call_waiting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callRecord_call_waiting.png; sourceTree = "<group>"; };
+		FFD044581B2EC36400D93F4B /* callRecord_callType.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callRecord_callType.png; sourceTree = "<group>"; };
+		FFD044591B2EC36400D93F4B /* callRecord_detail_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callRecord_detail_normal.png; sourceTree = "<group>"; };
+		FFD0445A1B2EC36400D93F4B /* callRecord_info_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callRecord_info_arrow.png; sourceTree = "<group>"; };
+		FFD0445B1B2EC36400D93F4B /* callRecord_info_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callRecord_info_normal.png; sourceTree = "<group>"; };
+		FFD0445C1B2EC36400D93F4B /* dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial.png; sourceTree = "<group>"; };
+		FFD0445D1B2EC36400D93F4B /* searchcontact_info_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchcontact_info_normal.png; sourceTree = "<group>"; };
+		FFD0445E1B2EC36400D93F4B /* typehuchu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = typehuchu.png; sourceTree = "<group>"; };
+		FFD0445F1B2EC36400D93F4B /* typehuru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = typehuru.png; sourceTree = "<group>"; };
+		FFD044601B2EC36400D93F4B /* weishuovip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weishuovip.png; sourceTree = "<group>"; };
+		FFD044611B2EC36400D93F4B /* weishuovipbig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weishuovipbig.png; sourceTree = "<group>"; };
+		FFD044711B2EC43E00D93F4B /* MKCallRecordListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCallRecordListCell.h; sourceTree = "<group>"; };
+		FFD044721B2EC43E00D93F4B /* MKCallRecordListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCallRecordListCell.m; sourceTree = "<group>"; };
+		FFD044731B2EC43E00D93F4B /* MKCallRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCallRecordViewController.h; sourceTree = "<group>"; };
+		FFD044741B2EC43E00D93F4B /* MKCallRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCallRecordViewController.m; sourceTree = "<group>"; };
+		FFD044771B2EC45700D93F4B /* MKCallRecordDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCallRecordDetailViewController.h; sourceTree = "<group>"; };
+		FFD044781B2EC45700D93F4B /* MKCallRecordDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCallRecordDetailViewController.m; sourceTree = "<group>"; };
+		FFD044791B2EC45700D93F4B /* MKCallRecordDetailListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCallRecordDetailListCell.h; sourceTree = "<group>"; };
+		FFD0447A1B2EC45700D93F4B /* MKCallRecordDetailListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCallRecordDetailListCell.m; sourceTree = "<group>"; };
+		FFD0447D1B2EC45F00D93F4B /* MKCallRecordUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCallRecordUtils.h; sourceTree = "<group>"; };
+		FFD0447E1B2EC45F00D93F4B /* MKCallRecordUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCallRecordUtils.m; sourceTree = "<group>"; };
+		FFD044831B2EC5A000D93F4B /* libMKContact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMKContact.a; path = ../Libs/libMKContact.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD0442D1B2EC30400D93F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD044841B2EC5A000D93F4B /* libMKContact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD0444B1B2EC32C00D93F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFD044271B2EC30400D93F4B = {
+			isa = PBXGroup;
+			children = (
+				FFD044831B2EC5A000D93F4B /* libMKContact.a */,
+				FFD044321B2EC30400D93F4B /* MKCallRecord */,
+				FFD0444F1B2EC32C00D93F4B /* MKCallRecordResource */,
+				FFD044311B2EC30400D93F4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD044311B2EC30400D93F4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD044301B2EC30400D93F4B /* libMKCallRecord.a */,
+				FFD0444E1B2EC32C00D93F4B /* MKCallRecordResource.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD044321B2EC30400D93F4B /* MKCallRecord */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0447D1B2EC45F00D93F4B /* MKCallRecordUtils.h */,
+				FFD0447E1B2EC45F00D93F4B /* MKCallRecordUtils.m */,
+				FFD0446F1B2EC3AD00D93F4B /* Detail */,
+				FFD044701B2EC3AD00D93F4B /* List */,
+			);
+			path = MKCallRecord;
+			sourceTree = "<group>";
+		};
+		FFD0444F1B2EC32C00D93F4B /* MKCallRecordResource */ = {
+			isa = PBXGroup;
+			children = (
+				FFD044551B2EC36400D93F4B /* callRecord_add_contact_down.png */,
+				FFD044561B2EC36400D93F4B /* callRecord_add_contact_normal.png */,
+				FFD044571B2EC36400D93F4B /* callRecord_call_waiting.png */,
+				FFD044581B2EC36400D93F4B /* callRecord_callType.png */,
+				FFD044591B2EC36400D93F4B /* callRecord_detail_normal.png */,
+				FFD0445A1B2EC36400D93F4B /* callRecord_info_arrow.png */,
+				FFD0445B1B2EC36400D93F4B /* callRecord_info_normal.png */,
+				FFD0445C1B2EC36400D93F4B /* dial.png */,
+				FFD0445D1B2EC36400D93F4B /* searchcontact_info_normal.png */,
+				FFD0445E1B2EC36400D93F4B /* typehuchu.png */,
+				FFD0445F1B2EC36400D93F4B /* typehuru.png */,
+				FFD044601B2EC36400D93F4B /* weishuovip.png */,
+				FFD044611B2EC36400D93F4B /* weishuovipbig.png */,
+				FFD044501B2EC32C00D93F4B /* Supporting Files */,
+			);
+			path = MKCallRecordResource;
+			sourceTree = "<group>";
+		};
+		FFD044501B2EC32C00D93F4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFD044511B2EC32C00D93F4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFD0446F1B2EC3AD00D93F4B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FFD044771B2EC45700D93F4B /* MKCallRecordDetailViewController.h */,
+				FFD044781B2EC45700D93F4B /* MKCallRecordDetailViewController.m */,
+				FFD044791B2EC45700D93F4B /* MKCallRecordDetailListCell.h */,
+				FFD0447A1B2EC45700D93F4B /* MKCallRecordDetailListCell.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FFD044701B2EC3AD00D93F4B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FFD044711B2EC43E00D93F4B /* MKCallRecordListCell.h */,
+				FFD044721B2EC43E00D93F4B /* MKCallRecordListCell.m */,
+				FFD044731B2EC43E00D93F4B /* MKCallRecordViewController.h */,
+				FFD044741B2EC43E00D93F4B /* MKCallRecordViewController.m */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FFD044801B2EC52700D93F4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD044811B2EC53D00D93F4B /* MKCallRecordUtils.h in Headers */,
+				FFD044821B2EC54B00D93F4B /* MKCallRecordViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FFD0442F1B2EC30400D93F4B /* MKCallRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD044441B2EC30400D93F4B /* Build configuration list for PBXNativeTarget "MKCallRecord" */;
+			buildPhases = (
+				FFD0442C1B2EC30400D93F4B /* Sources */,
+				FFD0442D1B2EC30400D93F4B /* Frameworks */,
+				FFD0442E1B2EC30400D93F4B /* CopyFiles */,
+				FFD044801B2EC52700D93F4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKCallRecord;
+			productName = MKCallRecord;
+			productReference = FFD044301B2EC30400D93F4B /* libMKCallRecord.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FFD0444D1B2EC32C00D93F4B /* MKCallRecordResource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD044521B2EC32C00D93F4B /* Build configuration list for PBXNativeTarget "MKCallRecordResource" */;
+			buildPhases = (
+				FFD0444A1B2EC32C00D93F4B /* Sources */,
+				FFD0444B1B2EC32C00D93F4B /* Frameworks */,
+				FFD0444C1B2EC32C00D93F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKCallRecordResource;
+			productName = MKCallRecordResource;
+			productReference = FFD0444E1B2EC32C00D93F4B /* MKCallRecordResource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD044281B2EC30400D93F4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = wulanzhou;
+				TargetAttributes = {
+					FFD0442F1B2EC30400D93F4B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FFD0444D1B2EC32C00D93F4B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = FFD0442B1B2EC30400D93F4B /* Build configuration list for PBXProject "MKCallRecord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFD044271B2EC30400D93F4B;
+			productRefGroup = FFD044311B2EC30400D93F4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD0442F1B2EC30400D93F4B /* MKCallRecord */,
+				FFD0444D1B2EC32C00D93F4B /* MKCallRecordResource */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFD0444C1B2EC32C00D93F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD0446E1B2EC36400D93F4B /* weishuovipbig.png in Resources */,
+				FFD0446C1B2EC36400D93F4B /* typehuru.png in Resources */,
+				FFD044671B2EC36400D93F4B /* callRecord_info_arrow.png in Resources */,
+				FFD044681B2EC36400D93F4B /* callRecord_info_normal.png in Resources */,
+				FFD044641B2EC36400D93F4B /* callRecord_call_waiting.png in Resources */,
+				FFD0446D1B2EC36400D93F4B /* weishuovip.png in Resources */,
+				FFD0446B1B2EC36400D93F4B /* typehuchu.png in Resources */,
+				FFD044631B2EC36400D93F4B /* callRecord_add_contact_normal.png in Resources */,
+				FFD044661B2EC36400D93F4B /* callRecord_detail_normal.png in Resources */,
+				FFD044691B2EC36400D93F4B /* dial.png in Resources */,
+				FFD044651B2EC36400D93F4B /* callRecord_callType.png in Resources */,
+				FFD044621B2EC36400D93F4B /* callRecord_add_contact_down.png in Resources */,
+				FFD0446A1B2EC36400D93F4B /* searchcontact_info_normal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD0442C1B2EC30400D93F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD044751B2EC43E00D93F4B /* MKCallRecordListCell.m in Sources */,
+				FFD0447C1B2EC45700D93F4B /* MKCallRecordDetailListCell.m in Sources */,
+				FFD0447B1B2EC45700D93F4B /* MKCallRecordDetailViewController.m in Sources */,
+				FFD0447F1B2EC45F00D93F4B /* MKCallRecordUtils.m in Sources */,
+				FFD044761B2EC43E00D93F4B /* MKCallRecordViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD0444A1B2EC32C00D93F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FFD044421B2EC30400D93F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FFD044431B2EC30400D93F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFD044451B2EC30400D93F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wulanzhou/Desktop/Project/Cool170/Libs,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../Libs/MKContact/;
+			};
+			name = Debug;
+		};
+		FFD044461B2EC30400D93F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wulanzhou/Desktop/Project/Cool170/Libs,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = ../Libs/MKContact/;
+			};
+			name = Release;
+		};
+		FFD044531B2EC32C00D93F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MKCallRecordResource/Info.plist;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FFD044541B2EC32C00D93F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				INFOPLIST_FILE = MKCallRecordResource/Info.plist;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD0442B1B2EC30400D93F4B /* Build configuration list for PBXProject "MKCallRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD044421B2EC30400D93F4B /* Debug */,
+				FFD044431B2EC30400D93F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD044441B2EC30400D93F4B /* Build configuration list for PBXNativeTarget "MKCallRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD044451B2EC30400D93F4B /* Debug */,
+				FFD044461B2EC30400D93F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD044521B2EC32C00D93F4B /* Build configuration list for PBXNativeTarget "MKCallRecordResource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD044531B2EC32C00D93F4B /* Debug */,
+				FFD044541B2EC32C00D93F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFD044281B2EC30400D93F4B /* Project object */;
+}

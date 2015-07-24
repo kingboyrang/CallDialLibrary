@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		267D4FE21B4AD21A00378D81 /* MKContactBasicViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 267D4FE01B4AD21A00378D81 /* MKContactBasicViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		267D4FE31B4AD21A00378D81 /* MKContactBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D4FE11B4AD21A00378D81 /* MKContactBasicViewController.m */; };
+		267D4FE61B4AD27B00378D81 /* nav_back_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267D4FE41B4AD27B00378D81 /* nav_back_nor@2x.png */; };
+		267D4FE71B4AD27B00378D81 /* nav_back_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267D4FE51B4AD27B00378D81 /* nav_back_sel@2x.png */; };
+		267D4FE91B4AE03000378D81 /* cool_secretary_team@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267D4FE81B4AE03000378D81 /* cool_secretary_team@2x.png */; };
+		267D4FEC1B4AE40800378D81 /* list_arrowhead@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267D4FEA1B4AE40800378D81 /* list_arrowhead@3x.png */; };
+		267D4FED1B4AE40800378D81 /* list_arrowhead@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267D4FEB1B4AE40800378D81 /* list_arrowhead@2x.png */; };
+		26DC48CB1B38638D00A5AC39 /* WSTouchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26DC48C91B38638D00A5AC39 /* WSTouchView.h */; };
+		26DC48CC1B38638D00A5AC39 /* WSTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DC48CA1B38638D00A5AC39 /* WSTouchView.m */; };
+		26DF53F01B4ACD4800F43F2C /* contact_default_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53DE1B4ACD4800F43F2C /* contact_default_photo.png */; };
+		26DF53F11B4ACD4800F43F2C /* contact_default_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53DF1B4ACD4800F43F2C /* contact_default_photo@2x.png */; };
+		26DF53F21B4ACD4800F43F2C /* contact_detail_im_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E01B4ACD4800F43F2C /* contact_detail_im_nor.png */; };
+		26DF53F31B4ACD4800F43F2C /* contact_detail_im_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E11B4ACD4800F43F2C /* contact_detail_im_nor@2x.png */; };
+		26DF53F41B4ACD4800F43F2C /* contact_detail_im_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E21B4ACD4800F43F2C /* contact_detail_im_nor@3x.png */; };
+		26DF53F51B4ACD4800F43F2C /* contact_detail_im_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E31B4ACD4800F43F2C /* contact_detail_im_sel.png */; };
+		26DF53F61B4ACD4800F43F2C /* contact_detail_im_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E41B4ACD4800F43F2C /* contact_detail_im_sel@2x.png */; };
+		26DF53F71B4ACD4800F43F2C /* contact_detail_im_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E51B4ACD4800F43F2C /* contact_detail_im_sel@3x.png */; };
+		26DF53F81B4ACD4800F43F2C /* contact_edit_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E61B4ACD4800F43F2C /* contact_edit_nor.png */; };
+		26DF53F91B4ACD4800F43F2C /* contact_edit_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E71B4ACD4800F43F2C /* contact_edit_nor@3x.png */; };
+		26DF53FA1B4ACD4800F43F2C /* contact_edit_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E81B4ACD4800F43F2C /* contact_edit_sel.png */; };
+		26DF53FB1B4ACD4800F43F2C /* contact_edit_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53E91B4ACD4800F43F2C /* contact_edit_sel@3x.png */; };
+		26DF53FC1B4ACD4800F43F2C /* dial_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53EA1B4ACD4800F43F2C /* dial_nor.png */; };
+		26DF53FD1B4ACD4800F43F2C /* dial_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53EB1B4ACD4800F43F2C /* dial_nor@2x.png */; };
+		26DF53FE1B4ACD4800F43F2C /* dial_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53EC1B4ACD4800F43F2C /* dial_nor@3x.png */; };
+		26DF53FF1B4ACD4800F43F2C /* dial_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53ED1B4ACD4800F43F2C /* dial_sel.png */; };
+		26DF54001B4ACD4800F43F2C /* dial_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53EE1B4ACD4800F43F2C /* dial_sel@2x.png */; };
+		26DF54011B4ACD4800F43F2C /* dial_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DF53EF1B4ACD4800F43F2C /* dial_sel@3x.png */; };
+		26F68E6A1B3735F7000AA178 /* contact_edit_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E691B3735F7000AA178 /* contact_edit_sel@2x.png */; };
+		26F68E6E1B37362A000AA178 /* contact_edit_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E6D1B37362A000AA178 /* contact_edit_nor@2x.png */; };
+		FFCF1C4C1B4F764A00484915 /* contact_add_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCF1C491B4F764A00484915 /* contact_add_nor.png */; };
+		FFCF1C4D1B4F764A00484915 /* contact_add_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCF1C4A1B4F764A00484915 /* contact_add_nor@2x.png */; };
+		FFCF1C4E1B4F764A00484915 /* contact_add_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCF1C4B1B4F764A00484915 /* contact_add_nor@3x.png */; };
+		FFD0439B1B2EBD6C00D93F4B /* avatar_default_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD043911B2EBD6C00D93F4B /* avatar_default_large@2x.png */; };
+		FFD0439C1B2EBD6C00D93F4B /* avatar_default_medium@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD043921B2EBD6C00D93F4B /* avatar_default_medium@2x.png */; };
+		FFD0439D1B2EBD6C00D93F4B /* avatar_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD043931B2EBD6C00D93F4B /* avatar_default@2x.png */; };
+		FFD0439E1B2EBD6C00D93F4B /* avatar_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD043941B2EBD6C00D93F4B /* avatar_default@3x.png */; };
+		FFD0439F1B2EBD6C00D93F4B /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD043951B2EBD6C00D93F4B /* avatar.png */; };
+		FFD043A11B2EBD6C00D93F4B /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD043971B2EBD6C00D93F4B /* message.png */; };
+		FFD043A21B2EBD6C00D93F4B /* upbkAtt.dat in Resources */ = {isa = PBXBuildFile; fileRef = FFD043981B2EBD6C00D93F4B /* upbkAtt.dat */; };
+		FFD043A31B2EBD6C00D93F4B /* userceter_backup.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD043991B2EBD6C00D93F4B /* userceter_backup.png */; };
+		FFD043A41B2EBD6C00D93F4B /* userceter_recovery.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD0439A1B2EBD6C00D93F4B /* userceter_recovery.png */; };
+		FFD043EF1B2EBDB000D93F4B /* ContactAddressNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043B41B2EBDB000D93F4B /* ContactAddressNode.m */; };
+		FFD043F01B2EBDB000D93F4B /* ContactNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043B61B2EBDB000D93F4B /* ContactNode.m */; };
+		FFD043F11B2EBDB000D93F4B /* ContactRecordNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043B81B2EBDB000D93F4B /* ContactRecordNode.m */; };
+		FFD043F21B2EBDB000D93F4B /* ContactSearchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043BA1B2EBDB000D93F4B /* ContactSearchNode.m */; };
+		FFD043F31B2EBDB000D93F4B /* RecordMegerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043BC1B2EBDB000D93F4B /* RecordMegerNode.m */; };
+		FFD043F41B2EBDB000D93F4B /* CommonContactEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043BE1B2EBDB000D93F4B /* CommonContactEngine.m */; };
+		FFD043F51B2EBDB000D93F4B /* ContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043BF1B2EBDB000D93F4B /* ContactManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFD043F61B2EBDB000D93F4B /* ContactSearchUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = FFD043C01B2EBDB000D93F4B /* ContactSearchUtils.c */; };
+		FFD043F71B2EBDB000D93F4B /* ContactUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043C11B2EBDB000D93F4B /* ContactUtils.m */; };
+		FFD043F81B2EBDB000D93F4B /* DeskContactEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043C21B2EBDB000D93F4B /* DeskContactEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFD043F91B2EBDB000D93F4B /* PhoneOnwerShipEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043C31B2EBDB000D93F4B /* PhoneOnwerShipEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFD043FA1B2EBDB000D93F4B /* RecordEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043C41B2EBDB000D93F4B /* RecordEngine.m */; };
+		FFD043FB1B2EBDB000D93F4B /* T9ContactRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043C51B2EBDB000D93F4B /* T9ContactRecord.m */; };
+		FFD043FC1B2EBDB000D93F4B /* T9SearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043C61B2EBDB000D93F4B /* T9SearchEngine.m */; };
+		FFD043FD1B2EBDB000D93F4B /* ContactWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043C91B2EBDB000D93F4B /* ContactWrapper.m */; };
+		FFD043FE1B2EBDB000D93F4B /* MKContactDetailPhoneListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043CB1B2EBDB000D93F4B /* MKContactDetailPhoneListCell.m */; };
+		FFD043FF1B2EBDB000D93F4B /* MKContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043CD1B2EBDB000D93F4B /* MKContactDetailViewController.m */; };
+		FFD044001B2EBDB000D93F4B /* MKContactListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043CF1B2EBDB000D93F4B /* MKContactListTableViewCell.m */; };
+		FFD044011B2EBDB000D93F4B /* MKContactSearchListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043D11B2EBDB000D93F4B /* MKContactSearchListCell.m */; };
+		FFD044021B2EBDB000D93F4B /* MKContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043D31B2EBDB000D93F4B /* MKContactViewController.m */; };
+		FFD044031B2EBDB000D93F4B /* ShowContactSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043D51B2EBDB000D93F4B /* ShowContactSectionView.m */; };
+		FFD044041B2EBDB000D93F4B /* RichMessageEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043DA1B2EBDB000D93F4B /* RichMessageEngine.m */; };
+		FFD044051B2EBDB000D93F4B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043DD1B2EBDB000D93F4B /* FMDatabase.m */; };
+		FFD044061B2EBDB000D93F4B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043DF1B2EBDB000D93F4B /* FMDatabaseAdditions.m */; };
+		FFD044071B2EBDB000D93F4B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043E11B2EBDB000D93F4B /* FMDatabasePool.m */; };
+		FFD044081B2EBDB000D93F4B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043E31B2EBDB000D93F4B /* FMDatabaseQueue.m */; };
+		FFD044091B2EBDB000D93F4B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043E61B2EBDB000D93F4B /* FMResultSet.m */; };
+		FFD0440A1B2EBDB000D93F4B /* WldhDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043E91B2EBDB000D93F4B /* WldhDBManager.m */; };
+		FFD0440B1B2EBDB000D93F4B /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD043EC1B2EBDB000D93F4B /* ChineseToPinyin.m */; };
+		FFD0440C1B2EBDB000D93F4B /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = FFD043ED1B2EBDB000D93F4B /* pinyin.c */; };
+		FFD0440E1B2EBEFB00D93F4B /* MKContactDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043CC1B2EBDB000D93F4B /* MKContactDetailViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD0440F1B2EBF3300D93F4B /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043DC1B2EBDB000D93F4B /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044101B2EBF3300D93F4B /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043DE1B2EBDB000D93F4B /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044111B2EBF3300D93F4B /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043E01B2EBDB000D93F4B /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044121B2EBF3300D93F4B /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043E21B2EBDB000D93F4B /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044131B2EBF3300D93F4B /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043E51B2EBDB000D93F4B /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044141B2EBF4800D93F4B /* ContactSearchNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043B91B2EBDB000D93F4B /* ContactSearchNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044151B2EBF6000D93F4B /* SQL.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043E71B2EBDB000D93F4B /* SQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044161B2EBF7100D93F4B /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043E41B2EBDB000D93F4B /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044171B2EBF7100D93F4B /* WldhDBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043E81B2EBDB000D93F4B /* WldhDBManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044181B2EBF8400D93F4B /* RecordMegerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043BB1B2EBDB000D93F4B /* RecordMegerNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044191B2EBFA100D93F4B /* RecordEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043AF1B2EBDB000D93F4B /* RecordEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD0441A1B2EBFD200D93F4B /* CommonContactEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043A71B2EBDB000D93F4B /* CommonContactEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD0441B1B2EBFD200D93F4B /* DeskContactEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043AD1B2EBDB000D93F4B /* DeskContactEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD0441C1B2EBFD200D93F4B /* PhoneOnwerShipEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043AE1B2EBDB000D93F4B /* PhoneOnwerShipEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD0441D1B2EBFD200D93F4B /* T9SearchEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043B11B2EBDB000D93F4B /* T9SearchEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD0441E1B2EBFE900D93F4B /* ContactRecordNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043B71B2EBDB000D93F4B /* ContactRecordNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD0441F1B2EBFF000D93F4B /* ContactAddressNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043B31B2EBDB000D93F4B /* ContactAddressNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044201B2EBFF800D93F4B /* ContactType.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043AB1B2EBDB000D93F4B /* ContactType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044211B2EBFF900D93F4B /* ContactUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043AC1B2EBDB000D93F4B /* ContactUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044221B2EC00C00D93F4B /* ContactManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043A81B2EBDB000D93F4B /* ContactManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044231B2EC00C00D93F4B /* T9ContactRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043B01B2EBDB000D93F4B /* T9ContactRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044241B2EC02100D93F4B /* MKContactViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043D21B2EBDB000D93F4B /* MKContactViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044251B2EC03900D93F4B /* ContactNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043B51B2EBDB000D93F4B /* ContactNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044261B2EC04A00D93F4B /* ContactWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD043C81B2EBDB000D93F4B /* ContactWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044D11B2ECA5900D93F4B /* MKContact.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD044CF1B2ECA5900D93F4B /* MKContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD044D21B2ECA5900D93F4B /* MKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD044D01B2ECA5900D93F4B /* MKContact.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFD0436A1B2EBCBF00D93F4B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26265F621B4AF893002DA5B8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		26265F641B4AF9B5002DA5B8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		26265F661B4AF9BA002DA5B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		267D4FE01B4AD21A00378D81 /* MKContactBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKContactBasicViewController.h; sourceTree = "<group>"; };
+		267D4FE11B4AD21A00378D81 /* MKContactBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKContactBasicViewController.m; sourceTree = "<group>"; };
+		267D4FE41B4AD27B00378D81 /* nav_back_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back_nor@2x.png"; sourceTree = "<group>"; };
+		267D4FE51B4AD27B00378D81 /* nav_back_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back_sel@2x.png"; sourceTree = "<group>"; };
+		267D4FE81B4AE03000378D81 /* cool_secretary_team@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cool_secretary_team@2x.png"; sourceTree = "<group>"; };
+		267D4FEA1B4AE40800378D81 /* list_arrowhead@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_arrowhead@3x.png"; sourceTree = "<group>"; };
+		267D4FEB1B4AE40800378D81 /* list_arrowhead@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_arrowhead@2x.png"; sourceTree = "<group>"; };
+		26DC48C91B38638D00A5AC39 /* WSTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTouchView.h; sourceTree = "<group>"; };
+		26DC48CA1B38638D00A5AC39 /* WSTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTouchView.m; sourceTree = "<group>"; };
+		26DF53DE1B4ACD4800F43F2C /* contact_default_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_default_photo.png; sourceTree = "<group>"; };
+		26DF53DF1B4ACD4800F43F2C /* contact_default_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_default_photo@2x.png"; sourceTree = "<group>"; };
+		26DF53E01B4ACD4800F43F2C /* contact_detail_im_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_detail_im_nor.png; sourceTree = "<group>"; };
+		26DF53E11B4ACD4800F43F2C /* contact_detail_im_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_detail_im_nor@2x.png"; sourceTree = "<group>"; };
+		26DF53E21B4ACD4800F43F2C /* contact_detail_im_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_detail_im_nor@3x.png"; sourceTree = "<group>"; };
+		26DF53E31B4ACD4800F43F2C /* contact_detail_im_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_detail_im_sel.png; sourceTree = "<group>"; };
+		26DF53E41B4ACD4800F43F2C /* contact_detail_im_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_detail_im_sel@2x.png"; sourceTree = "<group>"; };
+		26DF53E51B4ACD4800F43F2C /* contact_detail_im_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_detail_im_sel@3x.png"; sourceTree = "<group>"; };
+		26DF53E61B4ACD4800F43F2C /* contact_edit_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_edit_nor.png; sourceTree = "<group>"; };
+		26DF53E71B4ACD4800F43F2C /* contact_edit_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_edit_nor@3x.png"; sourceTree = "<group>"; };
+		26DF53E81B4ACD4800F43F2C /* contact_edit_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_edit_sel.png; sourceTree = "<group>"; };
+		26DF53E91B4ACD4800F43F2C /* contact_edit_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_edit_sel@3x.png"; sourceTree = "<group>"; };
+		26DF53EA1B4ACD4800F43F2C /* dial_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_nor.png; sourceTree = "<group>"; };
+		26DF53EB1B4ACD4800F43F2C /* dial_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_nor@2x.png"; sourceTree = "<group>"; };
+		26DF53EC1B4ACD4800F43F2C /* dial_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_nor@3x.png"; sourceTree = "<group>"; };
+		26DF53ED1B4ACD4800F43F2C /* dial_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_sel.png; sourceTree = "<group>"; };
+		26DF53EE1B4ACD4800F43F2C /* dial_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_sel@2x.png"; sourceTree = "<group>"; };
+		26DF53EF1B4ACD4800F43F2C /* dial_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dial_sel@3x.png"; sourceTree = "<group>"; };
+		26F68E691B3735F7000AA178 /* contact_edit_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_edit_sel@2x.png"; sourceTree = "<group>"; };
+		26F68E6D1B37362A000AA178 /* contact_edit_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_edit_nor@2x.png"; sourceTree = "<group>"; };
+		FFCF1C491B4F764A00484915 /* contact_add_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_add_nor.png; sourceTree = "<group>"; };
+		FFCF1C4A1B4F764A00484915 /* contact_add_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_add_nor@2x.png"; sourceTree = "<group>"; };
+		FFCF1C4B1B4F764A00484915 /* contact_add_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact_add_nor@3x.png"; sourceTree = "<group>"; };
+		FFD0436C1B2EBCBF00D93F4B /* libMKContact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMKContact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD0438A1B2EBD1C00D93F4B /* MKContactResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKContactResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD0438D1B2EBD1C00D93F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD043911B2EBD6C00D93F4B /* avatar_default_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_default_large@2x.png"; sourceTree = "<group>"; };
+		FFD043921B2EBD6C00D93F4B /* avatar_default_medium@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_default_medium@2x.png"; sourceTree = "<group>"; };
+		FFD043931B2EBD6C00D93F4B /* avatar_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_default@2x.png"; sourceTree = "<group>"; };
+		FFD043941B2EBD6C00D93F4B /* avatar_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_default@3x.png"; sourceTree = "<group>"; };
+		FFD043951B2EBD6C00D93F4B /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		FFD043971B2EBD6C00D93F4B /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
+		FFD043981B2EBD6C00D93F4B /* upbkAtt.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = upbkAtt.dat; sourceTree = "<group>"; };
+		FFD043991B2EBD6C00D93F4B /* userceter_backup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userceter_backup.png; sourceTree = "<group>"; };
+		FFD0439A1B2EBD6C00D93F4B /* userceter_recovery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userceter_recovery.png; sourceTree = "<group>"; };
+		FFD043A71B2EBDB000D93F4B /* CommonContactEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonContactEngine.h; sourceTree = "<group>"; };
+		FFD043A81B2EBDB000D93F4B /* ContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactManager.h; sourceTree = "<group>"; };
+		FFD043A91B2EBDB000D93F4B /* ContactSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSearchType.h; sourceTree = "<group>"; };
+		FFD043AA1B2EBDB000D93F4B /* ContactSearchUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSearchUtils.h; sourceTree = "<group>"; };
+		FFD043AB1B2EBDB000D93F4B /* ContactType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactType.h; sourceTree = "<group>"; };
+		FFD043AC1B2EBDB000D93F4B /* ContactUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUtils.h; sourceTree = "<group>"; };
+		FFD043AD1B2EBDB000D93F4B /* DeskContactEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeskContactEngine.h; sourceTree = "<group>"; };
+		FFD043AE1B2EBDB000D93F4B /* PhoneOnwerShipEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneOnwerShipEngine.h; sourceTree = "<group>"; };
+		FFD043AF1B2EBDB000D93F4B /* RecordEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordEngine.h; sourceTree = "<group>"; };
+		FFD043B01B2EBDB000D93F4B /* T9ContactRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T9ContactRecord.h; sourceTree = "<group>"; };
+		FFD043B11B2EBDB000D93F4B /* T9SearchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T9SearchEngine.h; sourceTree = "<group>"; };
+		FFD043B31B2EBDB000D93F4B /* ContactAddressNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactAddressNode.h; sourceTree = "<group>"; };
+		FFD043B41B2EBDB000D93F4B /* ContactAddressNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactAddressNode.m; sourceTree = "<group>"; };
+		FFD043B51B2EBDB000D93F4B /* ContactNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactNode.h; sourceTree = "<group>"; };
+		FFD043B61B2EBDB000D93F4B /* ContactNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactNode.m; sourceTree = "<group>"; };
+		FFD043B71B2EBDB000D93F4B /* ContactRecordNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactRecordNode.h; sourceTree = "<group>"; };
+		FFD043B81B2EBDB000D93F4B /* ContactRecordNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactRecordNode.m; sourceTree = "<group>"; };
+		FFD043B91B2EBDB000D93F4B /* ContactSearchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactSearchNode.h; sourceTree = "<group>"; };
+		FFD043BA1B2EBDB000D93F4B /* ContactSearchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactSearchNode.m; sourceTree = "<group>"; };
+		FFD043BB1B2EBDB000D93F4B /* RecordMegerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordMegerNode.h; sourceTree = "<group>"; };
+		FFD043BC1B2EBDB000D93F4B /* RecordMegerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordMegerNode.m; sourceTree = "<group>"; };
+		FFD043BE1B2EBDB000D93F4B /* CommonContactEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonContactEngine.m; sourceTree = "<group>"; };
+		FFD043BF1B2EBDB000D93F4B /* ContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactManager.m; sourceTree = "<group>"; };
+		FFD043C01B2EBDB000D93F4B /* ContactSearchUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ContactSearchUtils.c; sourceTree = "<group>"; };
+		FFD043C11B2EBDB000D93F4B /* ContactUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUtils.m; sourceTree = "<group>"; };
+		FFD043C21B2EBDB000D93F4B /* DeskContactEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeskContactEngine.m; sourceTree = "<group>"; };
+		FFD043C31B2EBDB000D93F4B /* PhoneOnwerShipEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneOnwerShipEngine.m; sourceTree = "<group>"; };
+		FFD043C41B2EBDB000D93F4B /* RecordEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordEngine.m; sourceTree = "<group>"; };
+		FFD043C51B2EBDB000D93F4B /* T9ContactRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T9ContactRecord.m; sourceTree = "<group>"; };
+		FFD043C61B2EBDB000D93F4B /* T9SearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T9SearchEngine.m; sourceTree = "<group>"; };
+		FFD043C81B2EBDB000D93F4B /* ContactWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactWrapper.h; sourceTree = "<group>"; };
+		FFD043C91B2EBDB000D93F4B /* ContactWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactWrapper.m; sourceTree = "<group>"; };
+		FFD043CA1B2EBDB000D93F4B /* MKContactDetailPhoneListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKContactDetailPhoneListCell.h; sourceTree = "<group>"; };
+		FFD043CB1B2EBDB000D93F4B /* MKContactDetailPhoneListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKContactDetailPhoneListCell.m; sourceTree = "<group>"; };
+		FFD043CC1B2EBDB000D93F4B /* MKContactDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKContactDetailViewController.h; sourceTree = "<group>"; };
+		FFD043CD1B2EBDB000D93F4B /* MKContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKContactDetailViewController.m; sourceTree = "<group>"; };
+		FFD043CE1B2EBDB000D93F4B /* MKContactListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKContactListTableViewCell.h; sourceTree = "<group>"; };
+		FFD043CF1B2EBDB000D93F4B /* MKContactListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKContactListTableViewCell.m; sourceTree = "<group>"; };
+		FFD043D01B2EBDB000D93F4B /* MKContactSearchListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKContactSearchListCell.h; sourceTree = "<group>"; };
+		FFD043D11B2EBDB000D93F4B /* MKContactSearchListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKContactSearchListCell.m; sourceTree = "<group>"; };
+		FFD043D21B2EBDB000D93F4B /* MKContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKContactViewController.h; sourceTree = "<group>"; };
+		FFD043D31B2EBDB000D93F4B /* MKContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKContactViewController.m; sourceTree = "<group>"; };
+		FFD043D41B2EBDB000D93F4B /* ShowContactSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowContactSectionView.h; sourceTree = "<group>"; };
+		FFD043D51B2EBDB000D93F4B /* ShowContactSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowContactSectionView.m; sourceTree = "<group>"; };
+		FFD043D91B2EBDB000D93F4B /* RichMessageEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichMessageEngine.h; sourceTree = "<group>"; };
+		FFD043DA1B2EBDB000D93F4B /* RichMessageEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichMessageEngine.m; sourceTree = "<group>"; };
+		FFD043DC1B2EBDB000D93F4B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		FFD043DD1B2EBDB000D93F4B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		FFD043DE1B2EBDB000D93F4B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		FFD043DF1B2EBDB000D93F4B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		FFD043E01B2EBDB000D93F4B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		FFD043E11B2EBDB000D93F4B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		FFD043E21B2EBDB000D93F4B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		FFD043E31B2EBDB000D93F4B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		FFD043E41B2EBDB000D93F4B /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		FFD043E51B2EBDB000D93F4B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		FFD043E61B2EBDB000D93F4B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		FFD043E71B2EBDB000D93F4B /* SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQL.h; sourceTree = "<group>"; };
+		FFD043E81B2EBDB000D93F4B /* WldhDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WldhDBManager.h; sourceTree = "<group>"; };
+		FFD043E91B2EBDB000D93F4B /* WldhDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WldhDBManager.m; sourceTree = "<group>"; };
+		FFD043EB1B2EBDB000D93F4B /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
+		FFD043EC1B2EBDB000D93F4B /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
+		FFD043ED1B2EBDB000D93F4B /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		FFD043EE1B2EBDB000D93F4B /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		FFD044CF1B2ECA5900D93F4B /* MKContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKContact.h; sourceTree = "<group>"; };
+		FFD044D01B2ECA5900D93F4B /* MKContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKContact.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD043691B2EBCBF00D93F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD043871B2EBD1C00D93F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFD043631B2EBCBF00D93F4B = {
+			isa = PBXGroup;
+			children = (
+				26265F651B4AF9B5002DA5B8 /* Localizable.strings */,
+				FFD0436E1B2EBCBF00D93F4B /* MKContact */,
+				FFD0438B1B2EBD1C00D93F4B /* MKContactResource */,
+				FFD0436D1B2EBCBF00D93F4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD0436D1B2EBCBF00D93F4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0436C1B2EBCBF00D93F4B /* libMKContact.a */,
+				FFD0438A1B2EBD1C00D93F4B /* MKContactResource.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD0436E1B2EBCBF00D93F4B /* MKContact */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043A51B2EBDB000D93F4B /* MKContactLogic */,
+				FFD043C71B2EBDB000D93F4B /* MKContactUI */,
+				FFD043D61B2EBDB000D93F4B /* MKDBManager */,
+				FFD043EA1B2EBDB000D93F4B /* pinyin */,
+				FFD044CF1B2ECA5900D93F4B /* MKContact.h */,
+				FFD044D01B2ECA5900D93F4B /* MKContact.m */,
+				26265F611B4AF886002DA5B8 /* InfoPlist.strings */,
+			);
+			path = MKContact;
+			sourceTree = "<group>";
+		};
+		FFD0438B1B2EBD1C00D93F4B /* MKContactResource */ = {
+			isa = PBXGroup;
+			children = (
+				FFCF1C491B4F764A00484915 /* contact_add_nor.png */,
+				FFCF1C4A1B4F764A00484915 /* contact_add_nor@2x.png */,
+				FFCF1C4B1B4F764A00484915 /* contact_add_nor@3x.png */,
+				267D4FEA1B4AE40800378D81 /* list_arrowhead@3x.png */,
+				267D4FEB1B4AE40800378D81 /* list_arrowhead@2x.png */,
+				267D4FE81B4AE03000378D81 /* cool_secretary_team@2x.png */,
+				267D4FE41B4AD27B00378D81 /* nav_back_nor@2x.png */,
+				267D4FE51B4AD27B00378D81 /* nav_back_sel@2x.png */,
+				26DF53DE1B4ACD4800F43F2C /* contact_default_photo.png */,
+				26DF53DF1B4ACD4800F43F2C /* contact_default_photo@2x.png */,
+				26DF53E01B4ACD4800F43F2C /* contact_detail_im_nor.png */,
+				26DF53E11B4ACD4800F43F2C /* contact_detail_im_nor@2x.png */,
+				26DF53E21B4ACD4800F43F2C /* contact_detail_im_nor@3x.png */,
+				26DF53E31B4ACD4800F43F2C /* contact_detail_im_sel.png */,
+				26DF53E41B4ACD4800F43F2C /* contact_detail_im_sel@2x.png */,
+				26DF53E51B4ACD4800F43F2C /* contact_detail_im_sel@3x.png */,
+				26DF53E61B4ACD4800F43F2C /* contact_edit_nor.png */,
+				26DF53E71B4ACD4800F43F2C /* contact_edit_nor@3x.png */,
+				26DF53E81B4ACD4800F43F2C /* contact_edit_sel.png */,
+				26DF53E91B4ACD4800F43F2C /* contact_edit_sel@3x.png */,
+				26DF53EA1B4ACD4800F43F2C /* dial_nor.png */,
+				26DF53EB1B4ACD4800F43F2C /* dial_nor@2x.png */,
+				26DF53EC1B4ACD4800F43F2C /* dial_nor@3x.png */,
+				26DF53ED1B4ACD4800F43F2C /* dial_sel.png */,
+				26DF53EE1B4ACD4800F43F2C /* dial_sel@2x.png */,
+				26DF53EF1B4ACD4800F43F2C /* dial_sel@3x.png */,
+				26F68E6D1B37362A000AA178 /* contact_edit_nor@2x.png */,
+				26F68E691B3735F7000AA178 /* contact_edit_sel@2x.png */,
+				FFD043911B2EBD6C00D93F4B /* avatar_default_large@2x.png */,
+				FFD043921B2EBD6C00D93F4B /* avatar_default_medium@2x.png */,
+				FFD043931B2EBD6C00D93F4B /* avatar_default@2x.png */,
+				FFD043941B2EBD6C00D93F4B /* avatar_default@3x.png */,
+				FFD043951B2EBD6C00D93F4B /* avatar.png */,
+				FFD043971B2EBD6C00D93F4B /* message.png */,
+				FFD043981B2EBD6C00D93F4B /* upbkAtt.dat */,
+				FFD043991B2EBD6C00D93F4B /* userceter_backup.png */,
+				FFD0439A1B2EBD6C00D93F4B /* userceter_recovery.png */,
+				FFD0438C1B2EBD1C00D93F4B /* Supporting Files */,
+			);
+			path = MKContactResource;
+			sourceTree = "<group>";
+		};
+		FFD0438C1B2EBD1C00D93F4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0438D1B2EBD1C00D93F4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFD043A51B2EBDB000D93F4B /* MKContactLogic */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043A61B2EBDB000D93F4B /* include */,
+				FFD043B21B2EBDB000D93F4B /* models */,
+				FFD043BD1B2EBDB000D93F4B /* source */,
+			);
+			path = MKContactLogic;
+			sourceTree = "<group>";
+		};
+		FFD043A61B2EBDB000D93F4B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043A71B2EBDB000D93F4B /* CommonContactEngine.h */,
+				FFD043A81B2EBDB000D93F4B /* ContactManager.h */,
+				FFD043A91B2EBDB000D93F4B /* ContactSearchType.h */,
+				FFD043AA1B2EBDB000D93F4B /* ContactSearchUtils.h */,
+				FFD043AB1B2EBDB000D93F4B /* ContactType.h */,
+				FFD043AC1B2EBDB000D93F4B /* ContactUtils.h */,
+				FFD043AD1B2EBDB000D93F4B /* DeskContactEngine.h */,
+				FFD043AE1B2EBDB000D93F4B /* PhoneOnwerShipEngine.h */,
+				FFD043AF1B2EBDB000D93F4B /* RecordEngine.h */,
+				FFD043B01B2EBDB000D93F4B /* T9ContactRecord.h */,
+				FFD043B11B2EBDB000D93F4B /* T9SearchEngine.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FFD043B21B2EBDB000D93F4B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043B31B2EBDB000D93F4B /* ContactAddressNode.h */,
+				FFD043B41B2EBDB000D93F4B /* ContactAddressNode.m */,
+				FFD043B51B2EBDB000D93F4B /* ContactNode.h */,
+				FFD043B61B2EBDB000D93F4B /* ContactNode.m */,
+				FFD043B71B2EBDB000D93F4B /* ContactRecordNode.h */,
+				FFD043B81B2EBDB000D93F4B /* ContactRecordNode.m */,
+				FFD043B91B2EBDB000D93F4B /* ContactSearchNode.h */,
+				FFD043BA1B2EBDB000D93F4B /* ContactSearchNode.m */,
+				FFD043BB1B2EBDB000D93F4B /* RecordMegerNode.h */,
+				FFD043BC1B2EBDB000D93F4B /* RecordMegerNode.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FFD043BD1B2EBDB000D93F4B /* source */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043BE1B2EBDB000D93F4B /* CommonContactEngine.m */,
+				FFD043BF1B2EBDB000D93F4B /* ContactManager.m */,
+				FFD043C01B2EBDB000D93F4B /* ContactSearchUtils.c */,
+				FFD043C11B2EBDB000D93F4B /* ContactUtils.m */,
+				FFD043C21B2EBDB000D93F4B /* DeskContactEngine.m */,
+				FFD043C31B2EBDB000D93F4B /* PhoneOnwerShipEngine.m */,
+				FFD043C41B2EBDB000D93F4B /* RecordEngine.m */,
+				FFD043C51B2EBDB000D93F4B /* T9ContactRecord.m */,
+				FFD043C61B2EBDB000D93F4B /* T9SearchEngine.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		FFD043C71B2EBDB000D93F4B /* MKContactUI */ = {
+			isa = PBXGroup;
+			children = (
+				26DC48C91B38638D00A5AC39 /* WSTouchView.h */,
+				26DC48CA1B38638D00A5AC39 /* WSTouchView.m */,
+				FFD043C81B2EBDB000D93F4B /* ContactWrapper.h */,
+				FFD043C91B2EBDB000D93F4B /* ContactWrapper.m */,
+				FFD043CA1B2EBDB000D93F4B /* MKContactDetailPhoneListCell.h */,
+				FFD043CB1B2EBDB000D93F4B /* MKContactDetailPhoneListCell.m */,
+				FFD043CC1B2EBDB000D93F4B /* MKContactDetailViewController.h */,
+				FFD043CD1B2EBDB000D93F4B /* MKContactDetailViewController.m */,
+				FFD043CE1B2EBDB000D93F4B /* MKContactListTableViewCell.h */,
+				FFD043CF1B2EBDB000D93F4B /* MKContactListTableViewCell.m */,
+				FFD043D01B2EBDB000D93F4B /* MKContactSearchListCell.h */,
+				FFD043D11B2EBDB000D93F4B /* MKContactSearchListCell.m */,
+				FFD043D21B2EBDB000D93F4B /* MKContactViewController.h */,
+				FFD043D31B2EBDB000D93F4B /* MKContactViewController.m */,
+				FFD043D41B2EBDB000D93F4B /* ShowContactSectionView.h */,
+				FFD043D51B2EBDB000D93F4B /* ShowContactSectionView.m */,
+				267D4FE01B4AD21A00378D81 /* MKContactBasicViewController.h */,
+				267D4FE11B4AD21A00378D81 /* MKContactBasicViewController.m */,
+			);
+			path = MKContactUI;
+			sourceTree = "<group>";
+		};
+		FFD043D61B2EBDB000D93F4B /* MKDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043D71B2EBDB000D93F4B /* FMDataBase */,
+				FFD043E81B2EBDB000D93F4B /* WldhDBManager.h */,
+				FFD043E91B2EBDB000D93F4B /* WldhDBManager.m */,
+			);
+			path = MKDBManager;
+			sourceTree = "<group>";
+		};
+		FFD043D71B2EBDB000D93F4B /* FMDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043D81B2EBDB000D93F4B /* Common */,
+				FFD043DB1B2EBDB000D93F4B /* fmdb */,
+			);
+			path = FMDataBase;
+			sourceTree = "<group>";
+		};
+		FFD043D81B2EBDB000D93F4B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043D91B2EBDB000D93F4B /* RichMessageEngine.h */,
+				FFD043DA1B2EBDB000D93F4B /* RichMessageEngine.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FFD043DB1B2EBDB000D93F4B /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043DC1B2EBDB000D93F4B /* FMDatabase.h */,
+				FFD043DD1B2EBDB000D93F4B /* FMDatabase.m */,
+				FFD043DE1B2EBDB000D93F4B /* FMDatabaseAdditions.h */,
+				FFD043DF1B2EBDB000D93F4B /* FMDatabaseAdditions.m */,
+				FFD043E01B2EBDB000D93F4B /* FMDatabasePool.h */,
+				FFD043E11B2EBDB000D93F4B /* FMDatabasePool.m */,
+				FFD043E21B2EBDB000D93F4B /* FMDatabaseQueue.h */,
+				FFD043E31B2EBDB000D93F4B /* FMDatabaseQueue.m */,
+				FFD043E41B2EBDB000D93F4B /* FMDB.h */,
+				FFD043E51B2EBDB000D93F4B /* FMResultSet.h */,
+				FFD043E61B2EBDB000D93F4B /* FMResultSet.m */,
+				FFD043E71B2EBDB000D93F4B /* SQL.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		FFD043EA1B2EBDB000D93F4B /* pinyin */ = {
+			isa = PBXGroup;
+			children = (
+				FFD043EB1B2EBDB000D93F4B /* ChineseToPinyin.h */,
+				FFD043EC1B2EBDB000D93F4B /* ChineseToPinyin.m */,
+				FFD043ED1B2EBDB000D93F4B /* pinyin.c */,
+				FFD043EE1B2EBDB000D93F4B /* pinyin.h */,
+			);
+			path = pinyin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FFD0440D1B2EBEDE00D93F4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD0440E1B2EBEFB00D93F4B /* MKContactDetailViewController.h in Headers */,
+				FFD0440F1B2EBF3300D93F4B /* FMDatabase.h in Headers */,
+				FFD044101B2EBF3300D93F4B /* FMDatabaseAdditions.h in Headers */,
+				FFD044111B2EBF3300D93F4B /* FMDatabasePool.h in Headers */,
+				FFD044121B2EBF3300D93F4B /* FMDatabaseQueue.h in Headers */,
+				FFD044131B2EBF3300D93F4B /* FMResultSet.h in Headers */,
+				FFD044151B2EBF6000D93F4B /* SQL.h in Headers */,
+				FFD044141B2EBF4800D93F4B /* ContactSearchNode.h in Headers */,
+				FFD044161B2EBF7100D93F4B /* FMDB.h in Headers */,
+				FFD044171B2EBF7100D93F4B /* WldhDBManager.h in Headers */,
+				FFD044181B2EBF8400D93F4B /* RecordMegerNode.h in Headers */,
+				FFD044191B2EBFA100D93F4B /* RecordEngine.h in Headers */,
+				FFD0441A1B2EBFD200D93F4B /* CommonContactEngine.h in Headers */,
+				FFD0441B1B2EBFD200D93F4B /* DeskContactEngine.h in Headers */,
+				FFD0441C1B2EBFD200D93F4B /* PhoneOnwerShipEngine.h in Headers */,
+				26DC48CB1B38638D00A5AC39 /* WSTouchView.h in Headers */,
+				FFD0441D1B2EBFD200D93F4B /* T9SearchEngine.h in Headers */,
+				FFD044201B2EBFF800D93F4B /* ContactType.h in Headers */,
+				FFD044211B2EBFF900D93F4B /* ContactUtils.h in Headers */,
+				FFD0441F1B2EBFF000D93F4B /* ContactAddressNode.h in Headers */,
+				FFD0441E1B2EBFE900D93F4B /* ContactRecordNode.h in Headers */,
+				FFD044221B2EC00C00D93F4B /* ContactManager.h in Headers */,
+				FFD044231B2EC00C00D93F4B /* T9ContactRecord.h in Headers */,
+				FFD044241B2EC02100D93F4B /* MKContactViewController.h in Headers */,
+				FFD044251B2EC03900D93F4B /* ContactNode.h in Headers */,
+				267D4FE21B4AD21A00378D81 /* MKContactBasicViewController.h in Headers */,
+				FFD044D11B2ECA5900D93F4B /* MKContact.h in Headers */,
+				FFD044261B2EC04A00D93F4B /* ContactWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FFD0436B1B2EBCBF00D93F4B /* MKContact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD043801B2EBCBF00D93F4B /* Build configuration list for PBXNativeTarget "MKContact" */;
+			buildPhases = (
+				FFD043681B2EBCBF00D93F4B /* Sources */,
+				FFD043691B2EBCBF00D93F4B /* Frameworks */,
+				FFD0436A1B2EBCBF00D93F4B /* CopyFiles */,
+				FFD0440D1B2EBEDE00D93F4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKContact;
+			productName = MKContact;
+			productReference = FFD0436C1B2EBCBF00D93F4B /* libMKContact.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FFD043891B2EBD1C00D93F4B /* MKContactResource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD0438E1B2EBD1C00D93F4B /* Build configuration list for PBXNativeTarget "MKContactResource" */;
+			buildPhases = (
+				FFD043861B2EBD1C00D93F4B /* Sources */,
+				FFD043871B2EBD1C00D93F4B /* Frameworks */,
+				FFD043881B2EBD1C00D93F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKContactResource;
+			productName = MKContactResource;
+			productReference = FFD0438A1B2EBD1C00D93F4B /* MKContactResource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD043641B2EBCBF00D93F4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = wulanzhou;
+				TargetAttributes = {
+					FFD0436B1B2EBCBF00D93F4B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FFD043891B2EBD1C00D93F4B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = FFD043671B2EBCBF00D93F4B /* Build configuration list for PBXProject "MKContact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = FFD043631B2EBCBF00D93F4B;
+			productRefGroup = FFD0436D1B2EBCBF00D93F4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD0436B1B2EBCBF00D93F4B /* MKContact */,
+				FFD043891B2EBD1C00D93F4B /* MKContactResource */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFD043881B2EBD1C00D93F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26DF53FD1B4ACD4800F43F2C /* dial_nor@2x.png in Resources */,
+				FFD0439D1B2EBD6C00D93F4B /* avatar_default@2x.png in Resources */,
+				26DF54001B4ACD4800F43F2C /* dial_sel@2x.png in Resources */,
+				FFD043A41B2EBD6C00D93F4B /* userceter_recovery.png in Resources */,
+				267D4FEC1B4AE40800378D81 /* list_arrowhead@3x.png in Resources */,
+				FFD043A11B2EBD6C00D93F4B /* message.png in Resources */,
+				26DF53F01B4ACD4800F43F2C /* contact_default_photo.png in Resources */,
+				26DF53F91B4ACD4800F43F2C /* contact_edit_nor@3x.png in Resources */,
+				26DF53FE1B4ACD4800F43F2C /* dial_nor@3x.png in Resources */,
+				267D4FE71B4AD27B00378D81 /* nav_back_sel@2x.png in Resources */,
+				26DF53FA1B4ACD4800F43F2C /* contact_edit_sel.png in Resources */,
+				26DF53FF1B4ACD4800F43F2C /* dial_sel.png in Resources */,
+				26DF53F11B4ACD4800F43F2C /* contact_default_photo@2x.png in Resources */,
+				FFD0439F1B2EBD6C00D93F4B /* avatar.png in Resources */,
+				FFCF1C4D1B4F764A00484915 /* contact_add_nor@2x.png in Resources */,
+				26DF54011B4ACD4800F43F2C /* dial_sel@3x.png in Resources */,
+				26DF53F51B4ACD4800F43F2C /* contact_detail_im_sel.png in Resources */,
+				267D4FE91B4AE03000378D81 /* cool_secretary_team@2x.png in Resources */,
+				FFD0439C1B2EBD6C00D93F4B /* avatar_default_medium@2x.png in Resources */,
+				FFCF1C4E1B4F764A00484915 /* contact_add_nor@3x.png in Resources */,
+				FFD0439E1B2EBD6C00D93F4B /* avatar_default@3x.png in Resources */,
+				26DF53F81B4ACD4800F43F2C /* contact_edit_nor.png in Resources */,
+				26DF53F61B4ACD4800F43F2C /* contact_detail_im_sel@2x.png in Resources */,
+				26DF53F21B4ACD4800F43F2C /* contact_detail_im_nor.png in Resources */,
+				FFD043A21B2EBD6C00D93F4B /* upbkAtt.dat in Resources */,
+				FFCF1C4C1B4F764A00484915 /* contact_add_nor.png in Resources */,
+				26DF53FC1B4ACD4800F43F2C /* dial_nor.png in Resources */,
+				26DF53F71B4ACD4800F43F2C /* contact_detail_im_sel@3x.png in Resources */,
+				267D4FE61B4AD27B00378D81 /* nav_back_nor@2x.png in Resources */,
+				26DF53F41B4ACD4800F43F2C /* contact_detail_im_nor@3x.png in Resources */,
+				26DF53FB1B4ACD4800F43F2C /* contact_edit_sel@3x.png in Resources */,
+				26DF53F31B4ACD4800F43F2C /* contact_detail_im_nor@2x.png in Resources */,
+				FFD0439B1B2EBD6C00D93F4B /* avatar_default_large@2x.png in Resources */,
+				267D4FED1B4AE40800378D81 /* list_arrowhead@2x.png in Resources */,
+				FFD043A31B2EBD6C00D93F4B /* userceter_backup.png in Resources */,
+				26F68E6A1B3735F7000AA178 /* contact_edit_sel@2x.png in Resources */,
+				26F68E6E1B37362A000AA178 /* contact_edit_nor@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD043681B2EBCBF00D93F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD0440C1B2EBDB000D93F4B /* pinyin.c in Sources */,
+				FFD043F91B2EBDB000D93F4B /* PhoneOnwerShipEngine.m in Sources */,
+				FFD043F01B2EBDB000D93F4B /* ContactNode.m in Sources */,
+				FFD044091B2EBDB000D93F4B /* FMResultSet.m in Sources */,
+				FFD044021B2EBDB000D93F4B /* MKContactViewController.m in Sources */,
+				FFD044061B2EBDB000D93F4B /* FMDatabaseAdditions.m in Sources */,
+				FFD044D21B2ECA5900D93F4B /* MKContact.m in Sources */,
+				FFD043F51B2EBDB000D93F4B /* ContactManager.m in Sources */,
+				FFD044001B2EBDB000D93F4B /* MKContactListTableViewCell.m in Sources */,
+				FFD043F81B2EBDB000D93F4B /* DeskContactEngine.m in Sources */,
+				FFD043EF1B2EBDB000D93F4B /* ContactAddressNode.m in Sources */,
+				FFD043FB1B2EBDB000D93F4B /* T9ContactRecord.m in Sources */,
+				FFD043FA1B2EBDB000D93F4B /* RecordEngine.m in Sources */,
+				FFD043FE1B2EBDB000D93F4B /* MKContactDetailPhoneListCell.m in Sources */,
+				FFD044011B2EBDB000D93F4B /* MKContactSearchListCell.m in Sources */,
+				FFD043FD1B2EBDB000D93F4B /* ContactWrapper.m in Sources */,
+				26DC48CC1B38638D00A5AC39 /* WSTouchView.m in Sources */,
+				FFD043F71B2EBDB000D93F4B /* ContactUtils.m in Sources */,
+				FFD044071B2EBDB000D93F4B /* FMDatabasePool.m in Sources */,
+				FFD043FC1B2EBDB000D93F4B /* T9SearchEngine.m in Sources */,
+				FFD044051B2EBDB000D93F4B /* FMDatabase.m in Sources */,
+				FFD043F21B2EBDB000D93F4B /* ContactSearchNode.m in Sources */,
+				FFD043F11B2EBDB000D93F4B /* ContactRecordNode.m in Sources */,
+				267D4FE31B4AD21A00378D81 /* MKContactBasicViewController.m in Sources */,
+				FFD0440B1B2EBDB000D93F4B /* ChineseToPinyin.m in Sources */,
+				FFD044041B2EBDB000D93F4B /* RichMessageEngine.m in Sources */,
+				FFD043FF1B2EBDB000D93F4B /* MKContactDetailViewController.m in Sources */,
+				FFD043F41B2EBDB000D93F4B /* CommonContactEngine.m in Sources */,
+				FFD043F31B2EBDB000D93F4B /* RecordMegerNode.m in Sources */,
+				FFD0440A1B2EBDB000D93F4B /* WldhDBManager.m in Sources */,
+				FFD044031B2EBDB000D93F4B /* ShowContactSectionView.m in Sources */,
+				FFD043F61B2EBDB000D93F4B /* ContactSearchUtils.c in Sources */,
+				FFD044081B2EBDB000D93F4B /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD043861B2EBD1C00D93F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		26265F611B4AF886002DA5B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26265F621B4AF893002DA5B8 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		26265F651B4AF9B5002DA5B8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26265F641B4AF9B5002DA5B8 /* zh-Hans */,
+				26265F661B4AF9BA002DA5B8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFD0437E1B2EBCBF00D93F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FFD0437F1B2EBCBF00D93F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFD043811B2EBCBF00D93F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FFD043821B2EBCBF00D93F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FFD0438F1B2EBD1C00D93F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MKContactResource/Info.plist;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FFD043901B2EBD1C00D93F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				INFOPLIST_FILE = MKContactResource/Info.plist;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD043671B2EBCBF00D93F4B /* Build configuration list for PBXProject "MKContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD0437E1B2EBCBF00D93F4B /* Debug */,
+				FFD0437F1B2EBCBF00D93F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD043801B2EBCBF00D93F4B /* Build configuration list for PBXNativeTarget "MKContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD043811B2EBCBF00D93F4B /* Debug */,
+				FFD043821B2EBCBF00D93F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD0438E1B2EBD1C00D93F4B /* Build configuration list for PBXNativeTarget "MKContactResource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD0438F1B2EBD1C00D93F4B /* Debug */,
+				FFD043901B2EBD1C00D93F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFD043641B2EBCBF00D93F4B /* Project object */;
+}

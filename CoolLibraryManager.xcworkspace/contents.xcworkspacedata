@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MKDialplateView/MKDialplateView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKBaseLib/MKBaseLib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKExample/MKExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKCallRecord/MKCallRecord.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKContact/MKContact.xcodeproj">
+   </FileRef>
+</Workspace>

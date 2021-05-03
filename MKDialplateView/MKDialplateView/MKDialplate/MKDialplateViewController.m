@@ -210,7 +210,12 @@
             [self showDialplateViewStatus:NO];
         }
     }];
-    [self changeViewModelToDialInput];
+    if (_isInput) {
+        [self changeViewModelToDialInput];
+    }else{
+        [self changeViewModelToRecord];
+    }
+    
     //发出通知
     if (!self.dialplateView.hidden) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"dialplateIsHidden" object:nil];

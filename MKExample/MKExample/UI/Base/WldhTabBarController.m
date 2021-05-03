@@ -9,6 +9,7 @@
 #import "WldhTabBarController.h"
 #import "DialViewController.h"
 #import "ContactManager.h"
+#import "WldhNavigationController.h"
 
 #define kWldhTabBarButtonBaseTag 9999
 #define kWldhTabBarMsgBaseTag    6666
@@ -83,13 +84,26 @@ static WldhTabBarController *sharedRechargeViewController = nil;
     //加载联系人
     //[[ContactManager shareInstance] loadAllContact];
 }
-
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    
+    if (item.tag == 0) {
+        //拨号盘隐藏了，则显示
+        WldhNavigationController *nav = (WldhNavigationController *)self.viewControllers[item.tag];
+        if([nav.topViewController isKindOfClass:[DialViewController class]]){
+           DialViewController *dialview = (DialViewController *)nav.topViewController;
+            if (dialview.dialplateVc) {
+                [dialview.dialplateVc.dialplateView showDialplate];
+            }
+        }
+    }
+    
+}
 
 //添加拨打显示界面
 - (void)addDialView:(UIView*)dialView{
     if (![self.view.subviews containsObject:dialView]) {
         
-        NSLog(@"dialView.frame =%@",NSStringFromCGRect(dialView.frame));
+       
         
         CGRect aRect = self.tabBar.frame;
         dialView.frame=aRect;

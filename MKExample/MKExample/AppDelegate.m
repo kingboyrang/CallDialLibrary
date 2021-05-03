@@ -34,6 +34,19 @@
     //加载联系人归属地
     [MKContact loadContactAttribution];
     
+    SystemUser *user = [SystemUser shareInstance];
+    user.name = @"kingboyrang";
+    user.phone = @"13632638275";
+    user.password = @"123456";
+    user.clientNubmer = @"13632638275";
+    user.clientPassword = @"542365";
+    user.token = @"6813248961231676121657";
+    user.tokenValidDate = @"2021-10-10";
+    user.userId = @"1";
+    user.yunToken = @"5613246130";
+    user.isLogin = YES;
+    [user saveUser];
+    
      //创建用户数据库
     if ([SystemUser shareInstance].isLogin) {
         [[WldhDBManager shareInstance] createUserDatabase:[SystemUser shareInstance].userId];

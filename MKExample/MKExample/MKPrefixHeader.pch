@@ -16,5 +16,6 @@
 #import "CZServiceManager.h"
 #import "CommonUtils.h"
 #import "AppConfig.h"
+#import "GlobalPublicDefine.h"
 
 #endif

@@ -109,6 +109,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07466909263F896000060700 /* GlobalPublicDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalPublicDefine.h; sourceTree = "<group>"; };
 		26265F5E1B4AF642002DA5B8 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
 		267D4FEE1B4AECB200378D81 /* title_add-contact_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title_add-contact_nor@2x.png"; sourceTree = "<group>"; };
 		267D4FEF1B4AECB200378D81 /* title_add-contact_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title_add-contact_nor@3x.png"; sourceTree = "<group>"; };
@@ -316,6 +317,7 @@
 		26F68DDC1B36DD1D000AA178 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				07466909263F896000060700 /* GlobalPublicDefine.h */,
 				26F68DDD1B36DD4D000AA178 /* AppConfig.h */,
 				26F68DDE1B36E900000AA178 /* WebViewController.h */,
 				26F68DDF1B36E900000AA178 /* WebViewController.m */,
@@ -624,8 +626,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				"zh-Hans-CN",
 			);
 			mainGroup = FFD044851B2EC67700D93F4B;
 			productRefGroup = FFD0448F1B2EC67700D93F4B /* Products */;
@@ -855,7 +859,7 @@
 				GCC_PREFIX_HEADER = MKExample/MKPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = MKExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -876,7 +880,7 @@
 				GCC_PREFIX_HEADER = MKExample/MKPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = MKExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

@@ -30,7 +30,7 @@
 
 #define kWSSearchHightLightColor    [UIColor colorWithRed:6/255.0 green:191/255.0 blue:4/255.0 alpha:1.0]
 
-@interface MKContactViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UISearchDisplayDelegate,KCItemClickDelegate>
+@interface MKContactViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,KCItemClickDelegate,UISearchControllerDelegate,UISearchResultsUpdating>
 //操作右侧索引显示的view
 @property (nonatomic, strong) ShowContactSectionView *contactSectionView;
 
@@ -38,9 +38,8 @@
 @property (nonatomic,strong) ContactNode *aContact;
 
 //搜索控件
-@property (nonatomic,strong) UISearchBar *searchBar;
-@property (nonatomic,strong) UISearchDisplayController *searchDisplay;
 @property (nonatomic,strong) UISearchController *searchController;
+@property (nonatomic, copy)  NSString *filterString;
 
 //联系人列表
 @property (nonatomic,strong) UITableView *contactListTable;
@@ -60,6 +59,7 @@
 
 //父试图控制器
 @property (nonatomic,strong) UIViewController *parentVc;
+
 
 @end
 
@@ -95,41 +95,9 @@
         self.allContactSortedDict = [NSDictionary dictionaryWithDictionary:dict];
     }
     
-     //初始化搜索框
-    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 44.0)];
-    self.searchBar.searchBarStyle=UISearchBarStyleDefault;
-    self.searchBar.placeholder = @"搜索";
-    self.searchBar.delegate = self;
-    self.searchBar.tintColor =[UIColor blackColor];
-    //RGB(54, 54, 54);
-    self.searchBar.barTintColor = RGB(232, 232, 225);
-    self.searchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    //搜索框的线
-    //头
-    UIView *lineHead = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 0.5)];
-    lineHead.backgroundColor = RGB(202, 204, 193);
-    [self.searchBar addSubview:lineHead];
-    //尾
-    UIView *lineEnd = [[UIView alloc] initWithFrame:CGRectMake(0, 43.5, kScreenWidth, 0.5)];
-    lineEnd.backgroundColor = RGB(202, 204, 193);
-    [self.searchBar addSubview:lineEnd];
-    
-    [self.view addSubview:self.searchBar];
-    
-    //用于显示搜索内容
-    //self.searchDisplay = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar contentsController:self.parentVc.tabBarController];
-    
-    self.searchDisplay = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar contentsController:self];
-    //实现搜索需要实现代理
-    self.searchDisplay.searchResultsDataSource = self;
-    self.searchDisplay.searchResultsDelegate = self;
-    self.searchDisplay.delegate = self;
-    self.searchDisplay.searchBar.delegate = self;
+   
 
     CGRect r=self.view.bounds;
-    r.origin.y=self.searchBar.frame.size.height;
-    r.size.height-=r.origin.y;
-    
     self.contactListTable = [[UITableView alloc] initWithFrame:r style:UITableViewStylePlain];
     self.contactListTable.autoresizingMask=UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewContentModeBottom|UIViewAutoresizingFlexibleHeight;
     self.contactListTable.delegate = self;
@@ -139,16 +107,7 @@
     self.contactListTable.sectionIndexBackgroundColor = [UIColor clearColor];
     self.contactListTable.sectionIndexColor=[UIColor colorWithRed:80/255.0 green:80/255.0 blue:80/255.0 alpha:1.0];
     self.contactListTable.separatorColor=[UIColor colorWithRed:226/255.0 green:226/255.0 blue:220/255.0 alpha:1.0];
-    //self.contactListTable.tableHeaderView = self.searchBar;
-    
-    //搜索uitableview
-    self.searchDisplay.searchResultsTableView.backgroundView=[[UIView alloc] init];
-    self.searchDisplay.searchResultsTableView.backgroundColor=self.view.backgroundColor;
-    self.searchDisplay.searchResultsTableView.separatorColor=[UIColor colorWithRed:226/255.0 green:226/255.0 blue:220/255.0 alpha:1.0];
-    UIView *footer=[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 1)];
-    footer.backgroundColor=[UIColor clearColor];
-    self.searchDisplay.searchResultsTableView.tableFooterView=footer;
-    
+
     
     //酷秘团队
     WSTouchView *coolTeam=[[WSTouchView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 60)];
@@ -163,20 +122,32 @@
     coollab.text=@"酷秘团队";
     coollab.font=[UIFont boldSystemFontOfSize:17.0];
     [coolTeam addSubview:coollab];
-    /**
-    UIImageView *arrowImageView=[[UIImageView alloc] initWithFrame:CGRectMake(coolTeam.frame.size.width-17-15, (coolTeam.frame.size.height-17)/2.0, 17, 17)];
-    arrowImageView.image=[MKContact getImageFromResourceBundleWithName:@"list_arrowhead@2x" type:@"png"];
-    [coolTeam addSubview:arrowImageView];
-     **/
-    self.contactListTable.tableHeaderView=coolTeam;
-    
+    //self.contactListTable.tableHeaderView=coolTeam;
     [self.view addSubview:self.contactListTable];
+    
+    
+    // 创建搜索控制器
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    
+    // 设置搜索控制器 更新的内容
+    // 搜索框输入时  更新列表
+    self.searchController.searchResultsUpdater = self;
+    
+    // 设置为NO的时候 列表的单元格可以点击 默认为YES无法点击无效
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    // 设置代理
+    self.searchController.delegate = self;
+    // 保证搜索导航栏中可见
+    [self.searchController.searchBar sizeToFit];
+    // 把搜索框 设置为表头
+    self.contactListTable.tableHeaderView = self.searchController.searchBar;
+    self.definesPresentationContext = YES;
     
     //通讯录鉴权
     BOOL ret = [[ContactManager shareInstance] addressBookIsAuthentication:YES];
     if (ret) {
         [self.contactListTable setHidden:NO];
-        self.searchDisplay.searchBar.hidden = NO;
+        //self.searchDisplay.searchBar.hidden = NO;
         //加载联系人
         BOOL loadContactSuccess = [[ContactManager shareInstance] loadAllContact];
         if (loadContactSuccess) {
@@ -185,7 +156,7 @@
     } else {
         [self createNotReadAddressBookTips];
         [self.contactListTable setHidden:YES];
-        self.searchDisplay.searchBar.hidden = YES;
+        //self.searchDisplay.searchBar.hidden = YES;
     }
     
     [self setTableViewFootView];
@@ -274,11 +245,11 @@
         
         if ([self.allContactSortedKey count] > 0){
             [_contactListTable setHidden:NO];
-            self.searchController.searchBar.hidden = NO;
+            //self.searchController.searchBar.hidden = NO;
             [_notReadTipsView setHidden:YES];
         }else{
             [_contactListTable setHidden:YES];
-            self.searchController.searchBar.hidden = YES;
+            //self.searchController.searchBar.hidden = YES;
             [_notReadTipsView setHidden:NO];
             
         }
@@ -347,11 +318,14 @@
 - (void)setTableViewFootView
 {
     NSInteger count = 0;
-    for (NSString *key in self.allContactSortedDict.allKeys) {
-        NSArray *arr = self.allContactSortedDict[key];
-        count += arr.count;
+    if (self.searchController.active) {
+       count = [self.searchContactsByPhone count];
+    }else{
+        for (NSString *key in self.allContactSortedDict.allKeys) {
+            NSArray *arr = self.allContactSortedDict[key];
+            count += arr.count;
+        }
     }
-    
     if (_contactSectionView) {
         [_contactSectionView removeFromSuperview];
         _contactSectionView = nil;
@@ -408,7 +382,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (tableView == self.searchDisplay.searchResultsTableView) {
+    if (self.searchController.active) {
         ContactSearchNode *oneNode = [self.searchContactsByPhone objectAtIndex:indexPath.row];
         T9ContactRecord *oneRecord = oneNode.contactRecord;
         ContactNode *aContact = [[ContactManager shareInstance] getOneContactByID:oneRecord.abRecordID];
@@ -454,7 +428,7 @@
  */
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    if (tableView==self.searchDisplay.searchResultsTableView) {
+    if (self.searchController.active) {
         return 1;
     }
     return [self.allContactSortedKey count];
@@ -469,7 +443,7 @@
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (tableView==self.searchDisplay.searchResultsTableView) {
+    if (self.searchController.active) {
         return [self.searchContactsByPhone count];
     }
     else
@@ -506,7 +480,7 @@
  */
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    if (tableView==self.searchDisplay.searchResultsTableView) {
+    if (self.searchController.active) {
         return 0;
     } else {
         NSString *aKey = [self.allContactSortedKey objectAtIndex:section];
@@ -527,7 +501,7 @@
  */
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    if (tableView==self.searchDisplay.searchResultsTableView)
+    if (self.searchController.active)
     {
         return nil;
     }
@@ -552,7 +526,7 @@
  */
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {
-    if (tableView==self.searchDisplay.searchResultsTableView) {
+    if (self.searchController.active) {
         return nil;
     } else {
         return self.allContactSortedKey;
@@ -560,7 +534,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index{
-    if (tableView==self.searchDisplay.searchResultsTableView) {
+    if (self.searchController.active) {
         return index;
     } else{
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideContactSectionView) object:nil];
@@ -579,7 +553,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (tableView==self.searchDisplay.searchResultsTableView)
+    if (self.searchController.active)
     {
         MKContactSearchListCell *cell = (MKContactSearchListCell *)[tableView dequeueReusableCellWithIdentifier:@"ContactListSearchCell"];
         ContactSearchNode *oneNode = self.searchContactsByPhone[indexPath.row];
@@ -691,83 +665,7 @@
     }
     return YES;
 }
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-{
-    [_searchContactsByPhone removeAllObjects];
-    [_contactSearchList removeAllObjects];
-    
-    if ([searchString length] > 15) {
-        searchString = [searchString substringWithRange:NSMakeRange(0, 14)];
-    }
-    
-    //搜索结果
-    NSArray *searchResult = [[ContactManager shareInstance] searchResultWithText:searchString];
-    
-    [self.contactSearchList addObjectsFromArray:searchResult];
-    
-    //避免同一个联系人N个相似号码搜索时出现 N*N条搜索结果
-    NSMutableArray *ids = [NSMutableArray arrayWithCapacity:0];
-    for (NSInteger i=0; i<self.contactSearchList.count; i++) {
-        T9ContactRecord *record = self.contactSearchList[i];
-        if (![ids containsObject:[NSNumber numberWithInteger:record.abRecordID]]) {
-            [ids addObject:[NSNumber numberWithInteger:record.abRecordID]];
-        }
-        else
-        {
-            [self.contactSearchList removeObjectAtIndex:i];
-            i--;
-        }
-    }
-    
-    
-    //过滤结果集，将有多个手机号码的联系人分多行显示
-    NSMutableArray *bList = [[NSMutableArray alloc] initWithCapacity:0];
-    
-    
-    for (NSInteger i=0; i<self.contactSearchList.count; i++)
-    {
-        T9ContactRecord *record = self.contactSearchList[i];
-        ContactNode *aContact = [[ContactManager shareInstance] getOneContactByID:record.abRecordID];
-        NSString *fullName = [aContact getContactFullName];
-        NSString *pinYing = record.strPinyinOfAcronym;
-        
-        NSArray *phoneList = [aContact contactAllPhone];
-        
-        for (int j=0; j<phoneList.count; j++)
-        {
-            NSString *phone = phoneList[j];
-            ContactSearchNode *node = [[ContactSearchNode alloc] init];
-            node.name = fullName;
-            node.number = phone;
-            node.pinYing = pinYing;
-            node.contactRecord = record;
-            
-            //记录匹配的范围，用于高亮显示
-            if ([node.name rangeOfString:searchString].location!=NSNotFound) {
-                node.nameMatchRange = [node.name rangeOfString:searchString];
-                [bList addObject:node];
-            }
-            else if ([node.number rangeOfString:searchString].location!=NSNotFound) {
-                node.numberMatchRange = [node.number rangeOfString:searchString];
-                [bList addObject:node];
-            }
-            else if ([self isAlpha:searchString] && [[node.contactRecord.strPinyinOfAcronym lowercaseString] rangeOfString:[searchString lowercaseString]].location!=NSNotFound) {
-                node.pinYingMatchRange = [[node.contactRecord.strPinyinOfAcronym lowercaseString] rangeOfString:[searchString lowercaseString]];
-                [bList addObject:node];
-            }
-            else if ([self isAlpha:searchString] && [[node.contactRecord.strValue lowercaseString] rangeOfString:[searchString lowercaseString]].location!=NSNotFound) {
-                [bList addObject:node];
-            }
-        }
-    }
-    [self.searchContactsByPhone addObjectsFromArray:bList];
-    
-    [self performSelectorOnMainThread:@selector(reloadListInMain)
-                           withObject:nil
-                        waitUntilDone:YES];
-    
-    return YES;
-}
+
 
 //判断是否为整形数字：
 - (BOOL)isNumber:(NSString*)string{
@@ -789,8 +687,118 @@
 - (void)reloadListInMain{
     @synchronized(self.contactListTable)
     {
+        //[self setTableViewFootView];
         [self.contactListTable reloadData];
     }
+}
+
+#pragma mark --- 重写 filterString的set方法
+- (void)setFilterString:(NSString *)searchString
+{
+    
+    if (_filterString!=searchString) {
+        _filterString = searchString;
+        
+        [_searchContactsByPhone removeAllObjects];
+        [_contactSearchList removeAllObjects];
+        
+        if ([searchString length] > 15) {
+            searchString = [searchString substringWithRange:NSMakeRange(0, 14)];
+        }
+        
+        //搜索结果
+        NSArray *searchResult = [[ContactManager shareInstance] searchResultWithText:searchString];
+        
+        [self.contactSearchList addObjectsFromArray:searchResult];
+        
+        //避免同一个联系人N个相似号码搜索时出现 N*N条搜索结果
+        NSMutableArray *ids = [NSMutableArray arrayWithCapacity:0];
+        for (NSInteger i=0; i<self.contactSearchList.count; i++) {
+            T9ContactRecord *record = self.contactSearchList[i];
+            if (![ids containsObject:[NSNumber numberWithInteger:record.abRecordID]]) {
+                [ids addObject:[NSNumber numberWithInteger:record.abRecordID]];
+            }
+            else
+            {
+                [self.contactSearchList removeObjectAtIndex:i];
+                i--;
+            }
+        }
+        
+        
+        //过滤结果集，将有多个手机号码的联系人分多行显示
+        NSMutableArray *bList = [[NSMutableArray alloc] initWithCapacity:0];
+        
+        
+        for (NSInteger i=0; i<self.contactSearchList.count; i++)
+        {
+            T9ContactRecord *record = self.contactSearchList[i];
+            ContactNode *aContact = [[ContactManager shareInstance] getOneContactByID:record.abRecordID];
+            NSString *fullName = [aContact getContactFullName];
+            NSString *pinYing = record.strPinyinOfAcronym;
+            
+            NSArray *phoneList = [aContact contactAllPhone];
+            
+            for (int j=0; j<phoneList.count; j++)
+            {
+                NSString *phone = phoneList[j];
+                ContactSearchNode *node = [[ContactSearchNode alloc] init];
+                node.name = fullName;
+                node.number = phone;
+                node.pinYing = pinYing;
+                node.contactRecord = record;
+                
+                //记录匹配的范围，用于高亮显示
+                if ([node.name rangeOfString:searchString].location!=NSNotFound) {
+                    node.nameMatchRange = [node.name rangeOfString:searchString];
+                    [bList addObject:node];
+                }
+                else if ([node.number rangeOfString:searchString].location!=NSNotFound) {
+                    node.numberMatchRange = [node.number rangeOfString:searchString];
+                    [bList addObject:node];
+                }
+                else if ([self isAlpha:searchString] && [[node.contactRecord.strPinyinOfAcronym lowercaseString] rangeOfString:[searchString lowercaseString]].location!=NSNotFound) {
+                    node.pinYingMatchRange = [[node.contactRecord.strPinyinOfAcronym lowercaseString] rangeOfString:[searchString lowercaseString]];
+                    [bList addObject:node];
+                }
+                else if ([self isAlpha:searchString] && [[node.contactRecord.strValue lowercaseString] rangeOfString:[searchString lowercaseString]].location!=NSNotFound) {
+                    [bList addObject:node];
+                }
+            }
+        }
+        [self.searchContactsByPhone addObjectsFromArray:bList];
+        
+        [self performSelectorOnMainThread:@selector(reloadListInMain)
+                               withObject:nil
+                            waitUntilDone:YES];
+    }
+}
+#pragma mark ---- UISearchResultsUpdating
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
+{
+    if (!searchController.active) {
+        return;
+    }
+    self.filterString = searchController.searchBar.text;
+}
+
+
+
+#pragma mark --- 设置searchController 代理方法
+// 将要返回
+- (void)willDismissSearchController:(UISearchController *)searchController
+{
+    // 点击cancel的时候 数组还原 刷新表
+    //self.visibleResults = self.allResults;
+    //[self.tableView reloadData];
+}
+
+-(void)didDismissSearchController:(UISearchController *)searchController
+{
+    
+    [self performSelectorOnMainThread:@selector(reloadListInMain)
+          withObject:nil
+       waitUntilDone:YES];
 }
 
 @end

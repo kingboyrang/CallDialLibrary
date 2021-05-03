@@ -23,8 +23,7 @@
     [super viewDidLoad];
     self.view.backgroundColor =  UIColorMakeRGB(247, 247, 241);
     
-    self.dialplateView.numberKeypadView.backgroundColor = [UIColor whiteColor];
-    
+   
     WldhTabBarController *tab=(WldhTabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController;
     //添加底部
     [tab addDialView:self.dialplateView.dialplateBottomView];

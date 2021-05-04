@@ -27,7 +27,6 @@
 
 +(WldhTabBarController *)shareInstance;
 
-//切换标签
-- (void)changedToIndex:(NSInteger)index;
+
 
 @end

@@ -48,23 +48,12 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    if (self.navigationController&&[self.navigationController.viewControllers count]>1) {
-        self.hidesBottomBarWhenPushed=YES;
-    }
+   
     
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-   
-    /**
-     if (self.navigationController&&[self.navigationController.viewControllers count]>=1) {
-     self.hidesBottomBarWhenPushed=YES;
-     }
-    if (self.navigationController&&[self.navigationController.viewControllers count]==1) {
-        self.hidesBottomBarWhenPushed=NO;
-    }
-     **/
 }
 
 - (BOOL)isNavigationBack{

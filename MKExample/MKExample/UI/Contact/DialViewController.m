@@ -40,8 +40,10 @@
      **/
     
     self.dialplateVc = [[DialplateViewController alloc] init];
-    self.dialplateVc.view.frame =CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-kTabbarRealHeight-kNavigationBarRealHeight);
+    
+    self.dialplateVc.view.frame =CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.view.frame.size.height-kTabbarRealHeight-kNavigationBarRealHeight);
     self.dialplateVc.view.backgroundColor=self.view.backgroundColor;
+    //self.dialplateVc.view.backgroundColor= [UIColor redColor];
     //self.containerView.bounds;
     [self.dialplateVc UpdateUI];    //传入所在view的bounds后需要重新布局
     [self addChildViewController:self.dialplateVc];

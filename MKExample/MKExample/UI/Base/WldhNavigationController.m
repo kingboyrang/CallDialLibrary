@@ -35,7 +35,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.hidesBottomBarWhenPushed=YES;
     [self setNavigationBackground];
    
     UIColor *titleColor = [UIColor blackColor];
@@ -59,6 +58,15 @@
     } else {
         [self.navigationBar setTintColor:RGB(238, 238, 238)];
     }
+}
+//重写push方法
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self.childViewControllers.count > 0) {
+           // push跳转后隐藏底部TabBar栏
+           viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+    
 }
 
 - (UIImage*)createImageWithColor:(UIColor*)color{

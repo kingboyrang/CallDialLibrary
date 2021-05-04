@@ -43,7 +43,6 @@
 		26F68E0D1B36F84C000AA178 /* WldhTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F68E0A1B36F84C000AA178 /* WldhTabBarController.m */; };
 		26F68E171B36F97D000AA178 /* CallRecordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F68E101B36F97D000AA178 /* CallRecordListViewController.m */; };
 		26F68E191B36F97D000AA178 /* DialplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F68E141B36F97D000AA178 /* DialplateViewController.m */; };
-		26F68E1A1B36F97D000AA178 /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F68E161B36F97D000AA178 /* DialViewController.m */; };
 		26F68E1F1B36FCD4000AA178 /* MeCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F68E1E1B36FCD4000AA178 /* MeCenter.m */; };
 		26F68E231B36FE55000AA178 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F68E221B36FE55000AA178 /* LoginManager.m */; };
 		26F68E251B370E02000AA178 /* QRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E241B370E02000AA178 /* QRCode.png */; };
@@ -160,8 +159,6 @@
 		26F68E101B36F97D000AA178 /* CallRecordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRecordListViewController.m; sourceTree = "<group>"; };
 		26F68E131B36F97D000AA178 /* DialplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialplateViewController.h; sourceTree = "<group>"; };
 		26F68E141B36F97D000AA178 /* DialplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialplateViewController.m; sourceTree = "<group>"; };
-		26F68E151B36F97D000AA178 /* DialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialViewController.h; sourceTree = "<group>"; };
-		26F68E161B36F97D000AA178 /* DialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialViewController.m; sourceTree = "<group>"; };
 		26F68E1D1B36FCD4000AA178 /* MeCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeCenter.h; sourceTree = "<group>"; };
 		26F68E1E1B36FCD4000AA178 /* MeCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeCenter.m; sourceTree = "<group>"; };
 		26F68E211B36FE55000AA178 /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
@@ -388,8 +385,6 @@
 				26F68E101B36F97D000AA178 /* CallRecordListViewController.m */,
 				26F68E131B36F97D000AA178 /* DialplateViewController.h */,
 				26F68E141B36F97D000AA178 /* DialplateViewController.m */,
-				26F68E151B36F97D000AA178 /* DialViewController.h */,
-				26F68E161B36F97D000AA178 /* DialViewController.m */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -722,7 +717,6 @@
 			files = (
 				26F68E361B3713BC000AA178 /* DialModeViewController.m in Sources */,
 				26F68E481B371C61000AA178 /* SettingViewController.m in Sources */,
-				26F68E1A1B36F97D000AA178 /* DialViewController.m in Sources */,
 				26F68E2A1B370FFB000AA178 /* AboutUSViewController.m in Sources */,
 				26F68E0D1B36F84C000AA178 /* WldhTabBarController.m in Sources */,
 				FFD0449A1B2EC67700D93F4B /* ViewController.m in Sources */,

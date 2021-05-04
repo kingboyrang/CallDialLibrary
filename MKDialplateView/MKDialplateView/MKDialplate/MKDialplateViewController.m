@@ -268,6 +268,20 @@
     rect.size.height = self.view.bounds.size.height;
     self.callRecordsListVc.view.frame = rect;
 }
+/**
+*  @brief  根据拨号盘进行重新布局
+*/
+- (void)subViewUpdateUI{
+    //搜索联系人的布局
+    CGRect rect = self.searchContactTable.frame;
+    rect.size.height = self.view.frame.size.height;
+    rect.size.width = self.dialplateView.frame.size.width;
+    self.searchContactTable.frame = rect;
+    //通话记录的布局
+    rect = self.callRecordsListVc.view.frame;
+    rect.size.height = self.view.bounds.size.height;
+    self.callRecordsListVc.view.frame = rect;
+}
 
 //一键清除输入的内容
 - (void)clearButtonAction:(UIButton *)sender

@@ -7,7 +7,7 @@
 //
 
 #import "WldhTabBarController.h"
-#import "DialViewController.h"
+#import "DialplateViewController.h"
 #import "ContactManager.h"
 #import "WldhNavigationController.h"
 
@@ -87,12 +87,13 @@ static WldhTabBarController *sharedRechargeViewController = nil;
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
     
     if (item.tag == 0) {
+
         //拨号盘隐藏了，则显示
         WldhNavigationController *nav = (WldhNavigationController *)self.viewControllers[item.tag];
-        if([nav.topViewController isKindOfClass:[DialViewController class]]){
-           DialViewController *dialview = (DialViewController *)nav.topViewController;
-            if (dialview.dialplateVc) {
-                [dialview.dialplateVc.dialplateView showDialplate];
+        if([nav.topViewController isKindOfClass:[DialplateViewController class]]){
+           DialplateViewController *dialview = (DialplateViewController *)nav.topViewController;
+            if (dialview) {
+                [dialview.dialplateView showDialplate];
             }
         }
     }
@@ -102,9 +103,7 @@ static WldhTabBarController *sharedRechargeViewController = nil;
 //添加拨打显示界面
 - (void)addDialView:(UIView*)dialView{
     if (![self.view.subviews containsObject:dialView]) {
-        
-       
-        
+
         CGRect aRect = self.tabBar.frame;
         dialView.frame=aRect;
         dialView.alpha=0.0;
@@ -116,50 +115,12 @@ static WldhTabBarController *sharedRechargeViewController = nil;
 - (void)hideDialplateAction:(NSNotification *)notification
 {
     
-    /**
-    UIButton *dibtn = (UIButton *)[_wldhTabBarView viewWithTag:kWldhTabBarButtonBaseTag];
-    UIImageView * btnimg = (UIImageView *)[dibtn viewWithTag:kWldhTabBarButtonBaseTag+100];
-    [self rotate:btnimg andAnimationDuration:0.5 andWait:NO andAngle:180];
-    **/
-    
-    /**
-    NSLog(@"键盘隐藏");
-    double _width = self.tabBar.frame.size.width / titileArr.count;
-    
-    if (self.selectedIndex == 0) {
-        self.coverView = [[UIView alloc] initWithFrame:CGRectMake((_width-34)/2, 3, 34, 34)];
-        self.coverView.backgroundColor = [UIColor whiteColor];
-        self.coverView.userInteractionEnabled = NO;
-        UIImageView * btnimg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 34, 31)];
-        btnimg.image = [UIImage imageNamed:@"tab_0_pre.png"];
-        [self.coverView addSubview:btnimg];
-        [_wldhTabBarView addSubview:self.coverView];
-    }
-     **/
+   
 }
 
 
 -(void)makeTabBarHidden:(BOOL)hide
 {
-
-    /**
-    UIView *contentView;
-    if ( [[self.view.subviews objectAtIndex:0] isKindOfClass:[UITabBar class]] ) {
-        contentView = [self.view.subviews objectAtIndex:1];
-    } else {
-        contentView = [self.view.subviews objectAtIndex:0];
-    }
-    
-    if (hide) {
-        contentView.frame = self.view.bounds;
-    } else {
-        contentView.frame = CGRectMake(self.view.bounds.origin.x,
-                                       self.view.bounds.origin.y,
-                                       self.view.bounds.size.width,
-                                       self.view.bounds.size.height -
-                                       self.tabBar.frame.size.height);
-    }
-    **/
     for(UIView *view in self.view.subviews)
     {
 		if([view isKindOfClass:[UITabBar class]])
@@ -257,6 +218,7 @@ static WldhTabBarController *sharedRechargeViewController = nil;
     
     if(nextIndex == 0)
     {
+        /**
         UIViewController *curview = (UIViewController *)[self.viewControllers objectAtIndex:nextIndex];
         if ([curview class] == [DialViewController class] )
         {
@@ -289,6 +251,7 @@ static WldhTabBarController *sharedRechargeViewController = nil;
                 }
             }
         }
+         */
     }
     
     if (nextIndex != self.selectedIndex)

@@ -104,7 +104,7 @@
         <!--拨号-->
         <scene sceneID="dqm-Jz-h9V">
             <objects>
-                <viewController id="jyq-Bx-PYl" customClass="DialViewController" sceneMemberID="viewController">
+                <viewController id="jyq-Bx-PYl" customClass="DialplateViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Myw-bM-T7k"/>
                         <viewControllerLayoutGuide type="bottom" id="RxE-71-em4"/>

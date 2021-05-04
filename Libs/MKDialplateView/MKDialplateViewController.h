@@ -45,6 +45,11 @@
 - (void)UpdateUI;
 
 /**
+*  @brief  根据拨号盘进行重新布局
+*/
+- (void)subViewUpdateUI;
+
+/**
  *  @brief  拨打电话
  */
 - (void)dialCallWithNumber:(NSString*)phone;

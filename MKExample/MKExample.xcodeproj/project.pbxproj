@@ -60,9 +60,6 @@
 		26F68E451B37171D000AA178 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E441B37171D000AA178 /* checkbox.png */; };
 		26F68E481B371C61000AA178 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F68E471B371C61000AA178 /* SettingViewController.m */; };
 		26F68E4A1B371E6C000AA178 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E491B371E6C000AA178 /* SettingViewController.xib */; };
-		26F68E4F1B3726D5000AA178 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E4C1B3726D5000AA178 /* icon-72.png */; };
-		26F68E501B3726D5000AA178 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E4D1B3726D5000AA178 /* icon.png */; };
-		26F68E511B3726D5000AA178 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E4E1B3726D5000AA178 /* icon@2x.png */; };
 		26F68E5C1B372B09000AA178 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F68E5A1B372B09000AA178 /* RecommendViewController.m */; };
 		26F68E5D1B372B09000AA178 /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E5B1B372B09000AA178 /* RecommendViewController.xib */; };
 		26F68E601B372EED000AA178 /* addressBook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F68E5F1B372EED000AA178 /* addressBook@2x.png */; };
@@ -183,9 +180,6 @@
 		26F68E461B371C61000AA178 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		26F68E471B371C61000AA178 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		26F68E491B371E6C000AA178 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
-		26F68E4C1B3726D5000AA178 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
-		26F68E4D1B3726D5000AA178 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		26F68E4E1B3726D5000AA178 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		26F68E591B372B09000AA178 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		26F68E5A1B372B09000AA178 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		26F68E5B1B372B09000AA178 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
@@ -446,16 +440,6 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
-		26F68E4B1B3726D5000AA178 /* ICON */ = {
-			isa = PBXGroup;
-			children = (
-				26F68E4C1B3726D5000AA178 /* icon-72.png */,
-				26F68E4D1B3726D5000AA178 /* icon.png */,
-				26F68E4E1B3726D5000AA178 /* icon@2x.png */,
-			);
-			path = ICON;
-			sourceTree = "<group>";
-		};
 		26F68E521B372908000AA178 /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,7 +473,6 @@
 			isa = PBXGroup;
 			children = (
 				26F68E5E1B372ECA000AA178 /* Recommend */,
-				26F68E4B1B3726D5000AA178 /* ICON */,
 				26F68E2E1B371114000AA178 /* Contact */,
 				26F68DF31B36F264000AA178 /* Me */,
 				26F68DE31B36EA7A000AA178 /* Text */,
@@ -643,7 +626,6 @@
 			files = (
 				FFD0449D1B2EC67700D93F4B /* Main.storyboard in Resources */,
 				26F68DFE1B36F790000AA178 /* icon_sys@2x.png in Resources */,
-				26F68E501B3726D5000AA178 /* icon.png in Resources */,
 				26F68E451B37171D000AA178 /* checkbox.png in Resources */,
 				26F68E4A1B371E6C000AA178 /* SettingViewController.xib in Resources */,
 				267D4FF21B4AECB200378D81 /* title_add-contact_nor@3x.png in Resources */,
@@ -670,7 +652,6 @@
 				26F68DFA1B36F778000AA178 /* icon_share@2x.png in Resources */,
 				26F68E2D1B3710C4000AA178 /* CoolQRCode.png in Resources */,
 				FFBD82EA1B2FF5F70094E8A7 /* tab_2_nor.png in Resources */,
-				26F68E4F1B3726D5000AA178 /* icon-72.png in Resources */,
 				26F68DFF1B36F790000AA178 /* icon_sys@3x.png in Resources */,
 				26F68E021B36F7A4000AA178 /* icon_set@2x.png in Resources */,
 				26F68E411B371521000AA178 /* ModifyPwdViewController.xib in Resources */,
@@ -704,7 +685,6 @@
 				26F68DAB1B36A728000AA178 /* btn_nor@3x.png in Resources */,
 				267D4FF31B4AECB200378D81 /* title_add-contact_nor.png in Resources */,
 				FFBD82E71B2FF5F70094E8A7 /* tab_0_predown.png in Resources */,
-				26F68E511B3726D5000AA178 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
